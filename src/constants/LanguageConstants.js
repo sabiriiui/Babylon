@@ -65,6 +65,14 @@ export const EnglishLocale = {
     HANDPICKHOTEL: "Handpicked Hotel",
     WORLDCLASSSERVICE: "World Class Service",
     BESTPRICEGURANTEE : "Best Price Guarantee",
+    CATEGORY: "Category",
+    DESCRIPTION: "Description",
+    ITINERARY:"Itinerary",
+    LOCATION:"Location",
+    AIRFARE:"Airfare",
+    DAY:"Day",
+    DEPARTURE:"Departure",
+    RETURN:"Return"
 }
 
 export const ArabicLocale = {
@@ -134,5 +142,6 @@ export const ArabicLocale = {
     JAKARTA:"جاكرتا",
     PUNCAK:"بونكاك",
     DISTINCTION:"تميز",
-    DESTINATIONS:"تميز"
+    DESTINATIONS:"تميز",
+    CATEGORY:"الفئة"
 }
