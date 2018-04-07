@@ -1,0 +1,119 @@
+.formContainer {
+  padding-left: 80px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  color: #58585A;
+  padding: 40px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #58585A; }
+  .formContainer form {
+    display: flex;
+    flex-direction: column;
+    color: #45556a;
+    padding: 30px;
+    width: fit-content; }
+  .formContainer fieldset {
+    display: flex;
+    flex-direction: column; }
+
+.contactus_div .formContainer {
+  display: flex;
+  justify-content: center; }
+
+.formContainer label {
+  font-weight: 400;
+  margin-bottom: 0px; }
+
+.marginR7 {
+  margin-right: 7px; }
+
+.flexRow {
+  display: flex;
+  align-items: center; }
+
+.flexRow > * {
+  margin-right: 20px; }
+
+.form-group {
+  width: 350px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.form-control {
+  width: 250px; }
+
+.mainHeading {
+  font-size: 16px;
+  padding-bottom: 10px;
+  margin-top: 25px; }
+
+.inputTextBox {
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #c9cacc; }
+
+.inputtextBoxDayPerson {
+  width: 75px;
+  margin-left: 15px; }
+
+.dayPersonSubItem {
+  width: 210px;
+  float: left; }
+
+.subheading {
+  display: inline-block; }
+
+.floatLeft {
+  float: left; }
+
+.floatRight {
+  float: right; }
+
+.textAlignRight {
+  text-align: right; }
+
+.subitems {
+  margin-left: 25px;
+  margin-bottom: 30px;
+  display: block; }
+
+.subitems input {
+  width: 250px;
+  float: right; }
+
+.DayPickerInput {
+  float: right; }
+
+.DayPickerInput input {
+  height: 35px;
+  padding: 10px;
+  border: 1px solid #c9cacc;
+  border-radius: 4px;
+  width: 250px; }
+
+.DayPickerInput input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+
+.marginLeft50px:not(:first-child) {
+  margin-left: 50px; }
+
+.marginBottom15px {
+  margin-bottom: 15px; }
+
+.enquireNowButton {
+  width: 150px;
+  background: #58585a;
+  color: #fff;
+  height: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 0px; }
+
+.DayPickerInput-Overlay {
+  margin-left: 1px; }

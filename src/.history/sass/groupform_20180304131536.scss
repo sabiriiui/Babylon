@@ -1,0 +1,152 @@
+.formContainer{
+    padding-left: 80px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    color:#58585A; 
+    width:500px;
+}
+
+.mainHeading{
+    font-size:16px;
+    padding-bottom:10px;
+    margin-top:25px;
+}
+
+.inputTextBox{
+    height: 30px;
+    padding:10px;
+    border: 1px solid #c9cacc;
+}
+
+.inputtextBoxDayPerson{
+    width:75px;
+    margin-left:15px;
+}
+
+.dayPersonSubItem{
+    width:210px;
+    float:left;
+}
+
+.subheading{
+    display:inline-block;
+}
+
+.floatLeft{
+    float:left;
+}
+
+.floatRight{
+    float:right;
+}
+
+.textAlignRight{
+    text-align:right;
+}
+
+.subitems{
+    margin-left: 25px; 
+    margin-bottom: 30px;
+    display:block;
+}
+
+.subitems input{
+    width:250px;
+    float:right;
+}
+
+.DayPickerInput{
+    float:right;
+}
+
+.DayPickerInput input{
+    height: 35px;
+    padding:10px;
+    border: 1px solid #c9cacc;
+}
+
+.marginLeft50px:not(:first-child){
+    margin-left:50px;
+}
+
+.marginBottom15px{
+    margin-bottom:15px;
+}
+
+.enquireNowButton{
+    width: 150px;
+    background: #58585a;
+    color: #fff;
+    height: 40px;
+    text-align: center;
+    margin-left: 480px;
+    margin-bottom: 20px;
+    border:0px;
+}
+
+
+/**********************************************/
+   input[type="radio"] {
+    margin-top: 0px;
+}
+
+.radiobuttonLabel {
+    display: inline!important;
+    font-size: 9.75pt; 
+    color: #5a5a5a;
+    cursor: default!important;
+    margin-left: 7px;
+}
+
+   .radiobutton .hidden-radioButton{
+  opacity: 0;
+  width: 18px !important;
+  height: 18px !important;
+}
+   .radiobuttonLabel.disableRadioLblCssClass{
+  opacity: 0.7;
+}
+
+   .radiobutton .radiobuttonInput{
+  display: flex;
+  align-items: center;
+  height: 30px;
+  display:inline-block;
+}
+   .radiobutton input[type="radio"]:disabled+label{
+
+  background-image: url(../images/radioBtn_unselected.png);
+  background-repeat: no-repeat;
+  cursor: default;
+  width: 18px !important;
+  height: 18px;
+  margin-left: -18px !important;
+  opacity: .3;
+
+}
+   .radiobutton .hidden-radioButton.disableRCssClass{
+  cursor: default;
+}
+
+   .radiobutton input[type="radio"]+label{
+
+  background-image: url(../images/radioBtn_unselected.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 18px !important;
+  height: 18px;
+  margin-left: -18px !important;
+
+}
+
+
+   .radiobutton input[type="radio"]:checked+label{
+
+  background-image: url(../images/radioBtn_selected.png);
+  background-repeat: no-repeat;
+
+}
+
+.radiobuttonInput label{
+    margin-bottom:-5px;
+} 

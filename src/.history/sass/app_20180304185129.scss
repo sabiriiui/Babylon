@@ -1,0 +1,168 @@
+#bali{
+
+  .group_div,
+  .honymoon_div,
+  .grpup_div,
+  .individual_div{
+    .bannerText{
+      background: rgba(1, 1, 1, 0.7);
+      margin-left: 0px;
+      padding-left: 16px;
+      margin-left: -7px;
+      padding-right: 5px;
+      top: 75%;
+      border-radius: 7px;
+    }
+  }
+  .bannerText{
+    position: absolute;
+    top: 27%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    font-family: aria;
+
+  }
+
+  .bannerText .discover{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: serif;
+  }
+
+  .bannerText .of{
+    font-size: 25px;
+    margin-left: 68px;
+    font-family: cursive;
+  }
+
+  .bannerText .bali{
+    text-transform: uppercase;
+    font-size: 90px;
+  }
+
+  .bookTourBtn{
+    bottom: 0px;
+    margin-top: 100px;
+  }
+    .bookTourBtn .btn:hover,
+  .bookTourBtn .btn{
+    background-color: transparent;
+    border: 1px solid;
+    color: #fff;
+    outline: none;
+  }
+
+  .imageConatiner{
+    position: relative;
+    height: 100vh;
+  }
+  .pakagesContainer{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .pakagesContainer .heading{
+    font-family: fantasy;
+    text-transform: uppercase;
+    height: 120px;
+    line-height: 120px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .image_tileContainer .image{
+    height: 250px;
+  }
+  .image_tileContainer:hover .footer{
+    display: flex;
+
+  }
+  .image_tileContainer .footer{
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(1, 1, 1, 0.7);
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .tiles{
+    width: 90%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .tiles .image_tileContainer{
+    margin: 2px;
+    position: relative;
+  }
+
+ .attractions,
+ .ourtours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .app_footer{
+    background: rgba(1,1,1,1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+  }
+  .app_footer .footer_icons{
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+  }
+
+  .app_footer .contactus{
+    font-family: cursive;
+    padding: 10px 0px;
+  }
+
+  .app_footer .copyright{
+    padding: 10px 0px;
+    font-family: fantasy;
+  }
+
+  .app_footer .footer_icons span{
+    font-size: 18px;
+    border: 1px solid #2d2b2b;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+    background-color: #2d2b2b;
+  }
+}
+
+.logo {
+  background-image: url("../images/logo.png"); 
+  border:1px solid #000;
+}
+
+.splashScreen{
+  border:1px solid #fff;
+  background-image: url('../images/logo.png');
+  width:100px;
+  height:100px;
+}

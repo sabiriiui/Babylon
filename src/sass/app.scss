@@ -1,0 +1,485 @@
+#bali{
+
+  .app_body_div{
+    min-height: 100vh;
+  }
+
+  pre{
+    white-space: pre-wrap !important;
+  }
+
+  legend{
+    text-align: center;
+    border-bottom: 1px solid #acaf09;
+    color:#45556a;
+  }
+
+  .breadcrumb {
+    // background-color: #efe66c;
+  }
+
+
+
+  .group_div,
+  .honeymoon_div,
+  .grpup_div,
+  .individual_div,
+  .service_div,
+  .contactus_div{
+    .bannerText{
+      background: rgba(1, 1, 1, 0.7);
+      margin-left: 0px;
+      padding-left: 16px;
+      margin-left: -7px;
+      padding-right: 5px;
+      top: 75%;
+      border-radius: 7px;
+      width: inherit !important;
+    }
+  }
+
+  .home_div .carousel .slider-wrapper,
+  .home_div .carousel .slider-wrapper ul,
+  .home_div .carousel .slider-wrapper li,
+  .home_div .carousel .slider-wrapper li div,
+  .home_div .carousel .slider-wrapper li div img,
+  {
+    height: 100%;
+  }
+
+  .bannerText{
+    position: absolute;
+    top: 27%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    font-family: aria;
+    z-index: 1;
+    width: 100%;
+
+  }
+
+  .bannerText .discover{
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-family: serif;
+  }
+
+  .bannerText .of{
+    font-size: 2vw;
+    margin-left: 68px;
+    font-family: cursive;
+  }
+
+  .bannerText .bali{
+    text-transform: uppercase;
+    font-size: 6vw;
+  }
+
+  .bookTourBtn{
+    bottom: 0px;
+    margin-top: 100px;
+  }
+    .bookTourBtn .btn:hover,
+  .bookTourBtn .btn{
+    background-color: transparent;
+    border: 1px solid;
+    color: #fff;
+    outline: none;
+  }
+
+  .imageConatiner{
+    position: relative;
+    height: 100vh;
+  }
+
+  .imageConatiner.contactus{
+    height: 60vh !important;
+  }
+  .pakagesContainer{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    background: linear-gradient(to bottom, #f3f3f3, #f8fbfc);
+  }
+
+  .pakagesContainer .heading{
+    text-transform: uppercase;
+    height: 120px;
+    line-height: 120px;
+    font-size: 25px;
+    font-family: Avenir Next,Helvetica,Arial,sans-serif;
+    color: #45556a
+  }
+  .image_tileContainer .image{
+    height: 450px;
+  }
+  .image_tileContainer:hover .footer{
+    display: flex;
+
+  }
+
+  .image_tileContainer .footer{
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(1, 1, 1, 0.7);
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .tiles{
+    width: 90%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .tiles .image_tileContainer{
+    width: 50%;
+    margin: 2px;
+    position: relative;
+  }
+
+ .attractions,
+ .ourtours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .app_footer{
+    background: rgba(1,1,1,1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+  }
+  .app_footer .footer_icons{
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+  }
+
+  .app_footer .contactus{
+    font-family: cursive;
+    padding: 10px 0px;
+  }
+
+  .app_footer .copyright{
+    padding: 10px 0px;
+    font-family: fantasy;
+  }
+
+  .app_footer .footer_icons span{
+    font-size: 18px;
+    border: 1px solid #2d2b2b;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+    background-color: #2d2b2b;
+  }
+}
+
+.splashlogo {
+  background-image: url("../images/logo.png");
+}
+
+.colorChangeAnimation{
+  background-color:#fafafa;
+  -webkit-transition: background-color 2000ms linear;
+  -ms-transition: background-color 2000ms linear;
+  transition: background-color 2000ms linear;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.marginB25{
+  margin-bottom: 25px;
+}
+
+.pakagesContainer a{
+  color: #fff !important;
+}
+
+.pakagesContainer a:hover{
+  text-decoration: none !important;
+}
+
+.languageLink{
+  color:#fff;
+  font-weight: bold;
+  font-size: 9pt;
+  text-align: right;
+  margin-right:15px;
+  cursor:pointer;
+  right: 15px;
+  position:absolute;
+  width:45px;
+}
+
+.languageLinkItem:hover{
+  text-decoration: underline;
+}
+
+.react-tel-input{
+  width:250px !important;
+}
+
+.react-tel-input input[type=tel],
+.react-tel-input input[type=text]{
+  width:250px !important;
+}
+
+.product-button {
+    background-color: #3b495b;
+    color: #b9d9e4;
+    border: 1px solid #b9d9e4;
+    margin-bottom: 2em;
+    transition: all .25s;
+    border-radius: 0;
+    min-width: 8em;
+}
+
+.product-button:hover {
+  background-color: #265a88;
+  background-position: 0 -15px;
+  color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.language-dropdown {
+    width: 100px;
+    right: 30px;
+    float: right;
+    position: absolute;
+    top: 46px;
+    cursor: pointer;
+    background-color: rgba(1, 1, 1, 0.6);
+}
+
+.language-display-div{
+  margin-left: 10px;
+    height: 20px;
+    cursor: pointer;
+    color: #FFF;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.language-menu-item{
+    color:#FFF;
+    width: 100px;
+    right: 28px;
+    float: right;
+    padding-left:10px;
+    font-size:10pt;
+    font-weight:500;
+}
+
+.language-menu-item:hover{
+  // background:#666;
+  color:rgb(236, 205, 42);
+}
+
+.language-dropdown:hover .language-dropdown-content {
+    display: block;
+}
+
+.rounded-top-border-2p{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.rounded-bottom-border-2p{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.fa-caret-down{
+  float: right;
+  margin-right: 10px;
+  // padding-top: 5px;
+}
+
+.arabic .fa-caret-down{
+  float: left;
+
+    // padding-top: 5px;
+}
+
+.pages_content h4 {
+  text-transform: uppercase;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.contact_infor {
+  margin-bottom: 30px;
+}
+
+.contact_infor ul {
+  margin: 0;
+}
+
+.contact_infor ul li {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  list-style: none;
+}
+
+.contact_infor ul li:last-child {
+  border-bottom: 0;
+}
+
+.contact_infor ul li label {
+  text-transform: uppercase;
+  width: 190px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+.whyChooseContainer{
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.chooseUsItem{
+  min-height: fit-content;
+}
+
+.whyChoose{
+  padding: 0px 20px;
+  justify-content: space-between;
+}
+
+.contact_infor ul li label i {
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.contact_infor ul li .des {
+  width: calc(100% - 194px);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container {
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.destinationContainer{
+  height: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgSliderCon{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.dest_img_cont:hover{
+  opacity: 0.8;
+}
+
+
+.dest_img_cont{
+  position: relative;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.circleImgs{
+  width: 72%;
+  overflow: hidden;
+}
+
+.goLeft, .goRight{
+  padding: 20px;
+  height: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+.dest_imgs_cont{
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+
+  transition: 1s;
+}
+
+.dest_imgs_cont .destName{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  pointer-events: none;
+  font-style: normal;
+  text-transform: uppercase;
+  transform: translateY(-50%)
+}
+
+.circleImgs img{
+  border-radius: 50%;
+}

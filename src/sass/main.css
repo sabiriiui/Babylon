@@ -1,0 +1,38 @@
+#assignment {
+  width: 100%;
+  height: 100%;
+  overflow: auto; }
+
+body {
+  margin: 0px;
+  background-color: #fafafa;
+  font-family: "Roboto",Arial,Helvetica,sans-serif;
+  min-width: 200px;
+  font-size: 14px; }
+
+.carousel.carousel-slider {
+  height: 100vh; }
+
+#root {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: #45556a; }
+
+.appDiv {
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.navigation-container {
+  background: rgba(1, 1, 1, 0.6);
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2; }

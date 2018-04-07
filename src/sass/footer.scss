@@ -1,0 +1,169 @@
+
+.custom-footer{
+    z-index: 1000;
+    padding: 25px 100px 50px 100px;
+    width: 100%;
+    height: 275px;
+    margin-top: 71px;
+    // background:rgb(91, 99, 102);
+    background:#414b4f;
+    color: #fff;
+}
+
+.footer-sub-div{
+    width: 25%;
+    height: 100%;
+    float:left;
+    font-size:13px;
+}
+
+.ml50{
+    margin-left:50px;
+}
+
+.mb10{
+    margin-bottom:10px;
+}
+
+.footer-div-heading{
+    font-size:18px !important;
+    text-transform: uppercase;
+    margin-bottom:20px;
+    font-weight: 400;
+}
+
+.footer-links{
+    padding: 8px 0px 8px 0px;
+    border-bottom: 1px solid #5b6366 !important;
+}
+
+.footer-link-text{
+    margin-left:10px;
+}
+
+.noBorder{
+    border:none !important;
+}
+
+.footer-sub-div a{
+    color: #fff ;
+}
+
+.footer-sub-div a:hover{
+    color: #ffb300 ;
+    text-decoration: none;
+}
+
+.footer-links-div i{
+    font-size: 10px !important;
+    color: #ffb300 ;
+}
+
+.noTopPadding{
+    padding-top:0px !important;
+}
+
+.footer-copyright-div{
+    width: 100%;
+    display: block;
+    clear: both;
+    border-top:1px solid #fff;
+    // background:rgb(91, 99, 102);
+    background:#000;
+    height:50px;
+    padding:15px 280px 15px 100px
+}
+
+
+.footer-copyright-div .footer_icons{
+    width:50%;
+    float:right;
+    text-align: right;
+
+}
+
+  .footer-copyright-div .contactus{
+    font-family: cursive;
+    padding: 10px 0px;
+  }
+
+  .footer-copyright-div .copyright{
+    width: 50%;
+    font-family: fantasy;
+    text-align: left;
+  }
+
+  .footer-copyright-div .footer_icons span{
+    font-size: 18px;
+    border: 1px solid #2d2b2b;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    height: 28px;
+    margin-left:10px;
+    color:#fff;
+    line-height: 28px;
+    cursor: pointer;
+    float:right;
+    background-color: #2d2b2b;
+  }
+
+@media screen and (max-width: 1050px) {
+    .footer-copyright-div{
+        padding:15px 150px 15px 100px
+    }
+}
+@media screen and (max-width: 950px) {
+    .footer-copyright-div{
+        width: 100%;
+        height:100px;
+        padding:15px 280px 15px 100px
+    }
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .footer-copyright-div{
+        width: 100%;
+        height:100px;
+        padding:15px 280px 15px 100px
+    }
+
+    .custom-footer{
+        height:650px;
+        padding: 25px 15px 10px 15px;
+    }
+
+    .ml50{
+        margin-left:0px;
+    }
+
+    .footer-sub-div{
+        width: 100%;
+        height:auto;
+        float:left;
+        font-size:13px;
+    }
+
+    .footer-copyright-div .copyright{
+        width:100%;
+        text-align:center;
+        padding-top:10px;
+    }
+
+    .footer-copyright-div .footer_icons{
+        width:100%;
+        text-align:center;
+    }
+
+    .footer-copyright-div{
+        padding: 10px 10px 10px 10px;
+    }
+
+    .footer-copyright-div .footer_icons span{
+        float:initial;
+    }
+}

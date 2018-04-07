@@ -1,0 +1,56 @@
+.pinkTile .pkg_header {
+  background-color: #eccd2a; }
+
+.pinkTile .pkg_body {
+  background-color: rgba(236, 205, 42, 0.5); }
+
+.greenTile .pkg_header {
+  background-color: #6fe66f; }
+
+.greenTile .pkg_body {
+  background-color: rgba(111, 230, 111, 0.5); }
+
+.clayTile .pkg_header {
+  background-color: #7ce6c4; }
+
+.clayTile .pkg_body {
+  background-color: rgba(124, 230, 196, 0.5); }
+
+.pakage_tileContainer {
+  position: relative;
+  height: 250px;
+  margin: 2px;
+  width: 200px; }
+  .pakage_tileContainer .pkg_header {
+    text-transform: uppercase;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    display: flex;
+    width: 200px;
+    justify-content: center; }
+  .pakage_tileContainer .pkg_body {
+    height: calc(100% - 30px); }
+    .pakage_tileContainer .pkg_body .list {
+      padding: 20px; }
+    .pakage_tileContainer .pkg_body .pkg_info {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      padding: 20px 10px; }
+  .pakage_tileContainer .pkg_footer {
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(1, 1, 1, 0.7);
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer; }
+
+.pakage_tileContainer:hover .pkg_footer {
+  display: flex; }

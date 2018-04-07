@@ -1,0 +1,51 @@
+.children_marginD10 > * {
+  margin-bottom: 10px; }
+
+.carousel .slide {
+  background: transparent !important; }
+
+.services_body > * {
+  margin-bottom: 30px; }
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.service_div {
+  text-transform: uppercase;
+  white-space: nowrap; }
+  .service_div .services_body .breadcrumb > * {
+    margin-right: 10px; }
+  .service_div .formContainer form {
+    align-items: center; }
+  .service_div .services_body .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .service_div .heading_underline {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 7px; }
+  .service_div .highlightsDiv {
+    display: flex; }
+  .service_div .hotelCauroselDiv > div,
+  .service_div .transportCauroselDiv > div {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .service_div .hotelCauroselDiv > div .carousel.carousel-slider,
+    .service_div .transportCauroselDiv > div .carousel.carousel-slider {
+      margin: 0px 7%;
+      max-width: 100vh;
+      height: auto !important;
+      max-height: 100vhl; }
+  .service_div .day_count {
+    font-weight: bold;
+    margin: 0px 20px; }
+  .service_div .itineraryDiv {
+    display: flex;
+    flex-direction: column; }

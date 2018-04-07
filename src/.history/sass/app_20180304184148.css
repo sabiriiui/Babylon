@@ -1,0 +1,141 @@
+#bali .group_div .bannerText,
+#bali .honymoon_div .bannerText,
+#bali .grpup_div .bannerText,
+#bali .individual_div .bannerText {
+  background: rgba(1, 1, 1, 0.7);
+  margin-left: 0px;
+  padding-left: 16px;
+  margin-left: -7px;
+  padding-right: 5px;
+  top: 75%;
+  border-radius: 7px; }
+
+#bali .bannerText {
+  position: absolute;
+  top: 27%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+  font-family: aria; }
+
+#bali .bannerText .discover {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: serif; }
+
+#bali .bannerText .of {
+  font-size: 25px;
+  margin-left: 68px;
+  font-family: cursive; }
+
+#bali .bannerText .bali {
+  text-transform: uppercase;
+  font-size: 90px; }
+
+#bali .bookTourBtn {
+  bottom: 0px;
+  margin-top: 100px; }
+
+#bali .bookTourBtn .btn:hover,
+#bali .bookTourBtn .btn {
+  background-color: transparent;
+  border: 1px solid;
+  color: #fff;
+  outline: none; }
+
+#bali .imageConatiner {
+  position: relative;
+  height: 100vh; }
+
+#bali .pakagesContainer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px; }
+
+#bali .pakagesContainer .heading {
+  font-family: fantasy;
+  text-transform: uppercase;
+  height: 120px;
+  line-height: 120px;
+  font-size: 25px;
+  font-weight: bold; }
+
+#bali .image_tileContainer .image {
+  height: 250px; }
+
+#bali .image_tileContainer:hover .footer {
+  display: flex; }
+
+#bali .image_tileContainer .footer {
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(1, 1, 1, 0.7);
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+#bali .tiles {
+  width: 90%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+#bali .tiles .image_tileContainer {
+  margin: 2px;
+  position: relative; }
+
+#bali .attractions,
+#bali .ourtours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center; }
+
+#bali .app_footer {
+  background: #010101;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ccc; }
+
+#bali .app_footer .footer_icons {
+  display: flex;
+  width: 200px;
+  justify-content: space-evenly; }
+
+#bali .app_footer .contactus {
+  font-family: cursive;
+  padding: 10px 0px; }
+
+#bali .app_footer .copyright {
+  padding: 10px 0px;
+  font-family: fantasy; }
+
+#bali .app_footer .footer_icons span {
+  font-size: 18px;
+  border: 1px solid #2d2b2b;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+  height: 28px;
+  line-height: 28px;
+  cursor: pointer;
+  background-color: #2d2b2b; }
+
+#splashScreen{
+  background-image: url(../images/logo.png);
+  width:100px;
+  height:100px;
+}

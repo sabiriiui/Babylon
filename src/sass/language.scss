@@ -1,0 +1,46 @@
+.arabic{
+  .tiles,
+  .form-group,
+  .navigation-container,
+  .menubar,.flexRow{
+    flex-direction: row-reverse;
+  }
+
+  .menubarContainer{
+   justify-content: flex-start !important;
+  }
+
+  .bannerText{
+    right: 0;
+    margin-right: -7px;
+    padding-right: 16px !important;
+    z-index: 1;
+  }
+
+  .marginR7{
+    margin-left: 7px !important;
+    margin-right: 0px !important;
+  }
+  .formContainer form{
+    align-items: flex-end;
+  }
+  .reverse
+  {
+    transform: rotate(90deg);
+  }
+  legend{
+    text-align: right;
+  }
+
+  #bali div:not(.contactus) img:not(.logoImg) {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+
+
+}
