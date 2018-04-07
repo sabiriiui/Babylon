@@ -9,7 +9,7 @@
  * AppConstants
  */
 
-
+//locale file for application
 import keyMirror from "keymirror";
 const AppConstants = keyMirror({
 

@@ -36,8 +36,19 @@
     margin-left: 1px;
 }
 .navigation-container .logo{
-  background-image: url("../images/logo.png");
+  position: relative;
 
+}
+
+.navigation-container .logo .appNameSpan{
+  position: absolute;
+  white-space: nowrap;
+  left: 5px;
+  top: 150%;
+  font-size: 22px;
+  color: #fff;
+  font-style: italic;
+  font-family: cursive;
 }
 
 

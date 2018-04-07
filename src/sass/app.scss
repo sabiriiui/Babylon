@@ -18,6 +18,17 @@
     // background-color: #efe66c;
   }
 
+  .appNameSpan{
+
+  }
+
+  .sentemail{
+    text-transform: none;
+    color: #599959;
+    text-align: center;
+    font-style: italic;
+  }
+
 
 
   .group_div,
@@ -114,7 +125,7 @@
     color: #45556a
   }
   .image_tileContainer .image{
-    height: 450px;
+    height: 370px;
   }
   .image_tileContainer:hover .footer{
     display: flex;

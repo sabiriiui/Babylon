@@ -28,6 +28,7 @@ export default class ContactusPage extends React.Component {
   constructor() {
 
     super();
+    this.state = {emailSent:false};
 
   }
 
@@ -35,10 +36,32 @@ export default class ContactusPage extends React.Component {
     map.setOptions({disableDefaultUI: true});
   }
 
+  onSubmit(e){
+    e.preventDefault();
+    this.setState({emailSent:true});
+    return true;
+  }
+
+  componentDidMount(){
+    if(this.state.emailSent){
+      setTimeout(()=>{
+        this.setState({emailSent:false});
+      },5000);
+    }
+  }
+
+  componentDidUpdate(){
+    if(this.state.emailSent){
+      setTimeout(()=>{
+        this.setState({emailSent:false});
+      },5000);
+    }
+  }
+
   render() {
 
     let languageLocale = getLocale(DataStore.getLocale());
-
+    let sent = (this.state.emailSent)?<span className="sentemail">{languageLocale["MAILSENTMESSAGE"]}</span>:"";
     return <div className="contactus_div">
       <div className="imageConatiner contactus">
         <div className="bannerText">
@@ -85,7 +108,8 @@ export default class ContactusPage extends React.Component {
           </div>
         </div>
         <div className="formContainer">
-          <Form action="https://formspree.io/info@babylonholidays.com" method="POST">
+          <Form onSubmit={this.onSubmit.bind(this)}
+            action="http://babylonholidays.com/cgi-bin/bluemail" enctype="multipart/form-data" method="POST">
             <FormGroup tag="fieldset">
               <legend>Have a question?</legend>
               <FormGroup>
@@ -108,6 +132,7 @@ export default class ContactusPage extends React.Component {
               </FormGroup>
 
             </FormGroup>
+            {sent}
             <input type="Submit" className="btn btn-lg product-button" value={languageLocale["FORMSUBMIT"]}></input>
 
           </Form>

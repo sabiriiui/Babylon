@@ -168,34 +168,28 @@ export default class HomePage extends React.Component {
           <span className="tiles">
             <ImageTile src={Attraction12} />
             <ImageTile src={Attraction13} />
+              <ImageTile src={Attraction9} />
           </span>
           <span className="tiles">
-            <ImageTile src={Attraction1} />
             <ImageTile src={Attraction4} />
-          </span>
-          <span className="tiles">
             <ImageTile src={Attraction7} />
             <ImageTile src={Attraction16} />
           </span>
           <span className="tiles">
             <ImageTile src={Attraction10} />
             <ImageTile src={Attraction11} />
-          </span>
-          <span className="tiles">
             <ImageTile src={Attraction14} />
-            <ImageTile src={Attraction15} />
           </span>
           <span className="tiles">
+
+            <ImageTile src={Attraction15} />
             <ImageTile src={Attraction2} />
             <ImageTile src={Attraction3} />
           </span>
           <span className="tiles">
             <ImageTile src={Attraction5} />
             <ImageTile src={Attraction6} />
-          </span>
-          <span className="tiles">
             <ImageTile src={Attraction8} />
-            <ImageTile src={Attraction9} />
           </span>
 
 

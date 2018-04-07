@@ -117,6 +117,7 @@ export default class App extends React.Component {
               <Link to="/">
                 <span className="logo">
                   <img className="logoImg" src={Logo} width="180px" height="90px" />
+                  <span className="appNameSpan">{languageLocale['BABYLONHOLIDAYS']}</span>
                 </span>
               </Link>
               <span className="menubarContainer"><MenuBar /></span>
