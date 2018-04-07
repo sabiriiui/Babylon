@@ -9,6 +9,12 @@
   border-bottom: 1px solid #acaf09;
   color: #45556a; }
 
+#bali .sentemail {
+  text-transform: none;
+  color: #599959;
+  text-align: center;
+  font-style: italic; }
+
 #bali .group_div .bannerText,
 #bali .honeymoon_div .bannerText,
 #bali .grpup_div .bannerText,
@@ -90,7 +96,7 @@
   color: #45556a; }
 
 #bali .image_tileContainer .image {
-  height: 450px; }
+  height: 370px; }
 
 #bali .image_tileContainer:hover .footer {
   display: flex; }

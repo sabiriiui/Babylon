@@ -1,4 +1,6 @@
 export const EnglishLocale = {
+    MAILSENTMESSAGE:"Thank you for your email, we will contact you soon..",
+    BABYLONHOLIDAYS: "Babylon Holidays",
     HOME: "HOME",
     TOURS: "TOURS",
     SERVICES: "SERVICES",
@@ -66,6 +68,9 @@ export const EnglishLocale = {
 }
 
 export const ArabicLocale = {
+
+    MAILSENTMESSAGE:"Thank you for your email, we will contact you soon..",
+    BABYLONHOLIDAYS: "Babylon Holidays",
     HANDPICKHOTEL: "Handpicked Hotel",
     WORLDCLASSSERVICE: "World Class Service",
     BESTPRICEGURANTEE : "Best Price Guarantee",

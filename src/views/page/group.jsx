@@ -17,9 +17,29 @@ export default class GroupPage extends React.Component {
     this.phone = "";
     this.fromDate = "";
     this.toDate = "";
+    this.state = {
+      emailSent: false
+    };
+  }
+
+  componentDidMount() {
+    if (this.state.emailSent) {
+      setTimeout(() => {
+        this.setState({emailSent: false});
+      }, 5000);
+    }
+  }
+
+  componentDidUpdate() {
+    if (this.state.emailSent) {
+      setTimeout(() => {
+        this.setState({emailSent: false});
+      }, 5000);
+    }
   }
 
   hanldeSubmit(e){
+    e.preventDefault();
     let form = document.getElementById("groupForm").firstElementChild;
     let ph = document.createElement("input");
     let fDate = document.createElement("input");
@@ -37,6 +57,7 @@ export default class GroupPage extends React.Component {
     form.appendChild(ph);
     form.appendChild(fDate);
     form.appendChild(toDate);
+    this.setState({emailSent: true});
     return true;
   }
 
@@ -44,6 +65,7 @@ export default class GroupPage extends React.Component {
   render() {
 
     let languageLocale = getLocale(DataStore.getLocale());
+    let sent = (this.state.emailSent)?<span className="sentemail">{languageLocale["MAILSENTMESSAGE"]}</span>:"";
 
     return <div className="group_div">
       <div className="imageConatiner">
@@ -53,20 +75,20 @@ export default class GroupPage extends React.Component {
         <img src={GroupImage} width="100%" height="100%" />
       </div>
       <div className="formContainer"  id="groupForm">
-      <Form method="POST" action="https://formspree.io/info@babylonholidays.com">
+        <Form onSubmit={this.hanldeSubmit.bind(this)} action="http://babylonholidays.com/cgi-bin/bluemail" enctype="multipart/form-data" method="POST">
 
         <FormGroup tag="fieldset">
           <legend>{languageLocale["WHEREDOYOUWANTTOSTAY"]}</legend>
           <div className="flexRow">
-            <FormGroup Hotel>
-              <Label Hotel>
-                <Input type="radio" name="stayAt" />{' '}
+            <FormGroup>
+              <Label>
+                <Input type="radio" name="stayAt" value="hotel"/>{' '}
                 <span style={{paddingLeft:"20px"}}>{languageLocale["HOTEL"]}</span>
               </Label>
             </FormGroup>
-            <FormGroup Villa>
-              <Label Villa>
-                <Input type="radio" name="stayAt" />{' '}
+            <FormGroup>
+              <Label>
+                <Input type="radio" name="stayAt" value="villa"/>{' '}
                 <span style={{paddingLeft:"20px"}}>{languageLocale["VILLA"]}</span>
               </Label>
             </FormGroup>
@@ -76,22 +98,22 @@ export default class GroupPage extends React.Component {
 
         <FormGroup tag="fieldset">
           <div className="flexRow">
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="venu" />{' '}
+          <FormGroup>
+            <Label>
+              <Input type="radio" name="venu" value="5 Star"/>{' '}
               <span style={{paddingLeft:"20px"}}>{languageLocale["FIVESTAR"]}</span>
             </Label>
           </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="venu" />{' '}
+          <FormGroup>
+            <Label>
+              <Input type="radio" name="venu"  value="4 Star"/>{' '}
               <span style={{paddingLeft:"20px"}}>{languageLocale["FOURSTAR"]}</span>
             </Label>
           </FormGroup>
 
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="venu" />{' '}
+          <FormGroup>
+            <Label>
+              <Input type="radio" name="venu"  value="3 Star"/>{' '}
               <span style={{paddingLeft:"20px"}}>{languageLocale["THREESTAR"]}</span>
             </Label>
           </FormGroup>
@@ -142,11 +164,10 @@ export default class GroupPage extends React.Component {
             <Input type="email" name="email" id="emailField" placeholder="" />
           </FormGroup>
         </FormGroup>
-
+        {sent}
         <input type="Submit"
           className="btn btn-lg product-button"
-          value={languageLocale["ENQUIRENOW"]}
-          onClick={this.hanldeSubmit.bind(this)}>
+          value={languageLocale["ENQUIRENOW"]}>
         </input>
 
       </Form>
