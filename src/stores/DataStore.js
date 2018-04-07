@@ -7,8 +7,8 @@ export default class DataStoreClass extends  EventEmitter{
 
     constructor() {
         super();
-        this.locale = "English";
-
+        this.locale = "English"; 
+        console.log("Selected language : " + this.locale);
     }
 
     getLocale(){
