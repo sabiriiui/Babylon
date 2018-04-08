@@ -6,6 +6,13 @@ import { DataStore } from '../../stores/DataStore';
 import { getLocale } from '../../Utils/commonUtilities.react';
 
 import { Gmaps, Marker, InfoWindow, Circle } from 'react-gmaps';
+
+import Attraction1 from '../../images/attractions/attraction10.jpg';
+import Attraction2 from '../../images/attractions/attraction13.jpg';
+import Attraction3 from '../../images/attractions/attraction14.jpg';
+
+var Carousel = require('react-responsive-carousel').Carousel;
+
 const coords = {
   lat: -8.791072,
   lng: 115.2113233
@@ -26,6 +33,22 @@ export default class IndividualPage extends React.Component {
     this.state = this.getState();
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll.bind(this));
+  }
+
+  handleScroll() {
+    let menuNode = document.getElementById('description-menu');
+    if (menuNode.getBoundingClientRect().top < 81) {
+      this.setState({ fixedMenu: true });
+    } 
+    if (document.getElementById('description').getBoundingClientRect().top > 150){
+      this.setState({ fixedMenu: false });
+    }
+    console.log("Scrolling");
+
+  }
+
   onMapCreated(map) {
     map.setOptions({ disableDefaultUI: true });
   }
@@ -35,6 +58,7 @@ export default class IndividualPage extends React.Component {
     let language = DataStore.getLocale();
     let isEnglish = (language == "English")
     return {
+      fixedMenu: false,
       title: (isEnglish) ? "Discover Bali" : "",
       stayTime: (isEnglish) ? "5 DAYS - 4 NIGHTS" : "",
       categoryText: (isEnglish) ? "ESCORTED TOUR, RAIL TOUR" : "",
@@ -52,11 +76,11 @@ export default class IndividualPage extends React.Component {
       day3departure: (isEnglish) ? "Fusce sagittis viverra lorem proin porttitor conubia risus vivamus. Mollis. Luctus curabitur porta nibh penatibus aliquet nec conubia magnis semper, sem feugiat scelerisque molestie. Nibh proin dapibus phasellus lacus. Facilisi." : "",
       day4departure: (isEnglish) ? "Pretium consequat, facilisis sem in malesuada sodales et ipsum proin eleifend tincidunt, urna morbi metus quisque. Lacinia habitasse ridiculus sapien platea a cursus hendrerit tempor facilisi orci at tempor, senectus." : "",
       day5departure: (isEnglish) ? "Egestas maecenas hac nullam integer at. Lacinia habitasse ridiculus sapien platea a cursus hendrerit tempor facilisi orci at tempor, senectus." : "",
-      tableh1: (isEnglish) ? "DEPARTURE/RETURN LOCATION" : "",     
+      tableh1: (isEnglish) ? "DEPARTURE/RETURN LOCATION" : "",
       tableh2: (isEnglish) ? "DEPARTURE TIME" : "",
       tableh3: (isEnglish) ? "INCLUDED" : "",
       tableh4: (isEnglish) ? "NOT INCLUDED" : "",
-      tableh1d: (isEnglish) ? "San Francisco International Airport":"",
+      tableh1d: (isEnglish) ? "San Francisco International Airport" : "",
       tableh2d: (isEnglish) ? "Please arrive at least 2 hours before the flight." : "",
       tableh3d1: (isEnglish) ? "Airfare" : "",
       tableh3d2: (isEnglish) ? "Accommodations" : "",
@@ -143,6 +167,8 @@ export default class IndividualPage extends React.Component {
 
     let languageLocale = getLocale(DataStore.getLocale());
 
+    let menuStyle = (this.state.fixedMenu) ? {position:"fixed",top:"80px",left:"7.6%",width:"59%"} : {};
+
     return <div className="individual_div">
       <div className="imageConatiner">
         <div className="bannerText">
@@ -151,12 +177,12 @@ export default class IndividualPage extends React.Component {
         <img src={Individual} width="100%" height="100%" />
       </div>
 
-      <div className="main_container">
+      <div className="main_container" style={{ background: "#fff" }}>
         <div className="left_container floatLeft bordered">
-          <div>
+          <div className>
             <h1>{this.state.title}</h1>
           </div>
-          <hr />
+          <hr style={{ marginBottom: "30px", marginTop: "10px" }} />
           <div className="tour_carousel">
             <div className="stay_time_category_socail">
               <div className="stay_details_div">
@@ -176,17 +202,33 @@ export default class IndividualPage extends React.Component {
               </div>
             </div>
           </div>
-          <div style={{ height: "400px", width: "100%" }} className="bordered floatLeft">carosuel</div>
+          <div className="bordered fullWidth floatLeft" style={{ marginTop: "30px" }}>
+            <Carousel showThumbs={true} showArrows={true}
+            >
+              <div>
+                <img src={require('../../images/main.jpg')} />
+              </div>
+              <div>
+                <img src={Attraction1} />
+              </div>
+              <div>
+                <img src={Attraction2} />
+              </div>
+              <div>
+                <img src={Attraction3} />
+              </div>
+            </Carousel>
+          </div>
 
-          <div id="description" className="details-navigation fullWidth floatLeft mb30 fixed-menu" ref="detailNavigation">
+          <div id="description-menu" style={menuStyle} className="details-navigation fullWidth floatLeft mb30 fixed-menu" ref="detailNavigation">
             <span><a href="#description">{languageLocale["DESCRIPTION"]}</a></span>
             <span><a href="#itinerary">{languageLocale["ITINERARY"]}</a></span>
             <span><a href="#location">{languageLocale["LOCATION"]}</a></span>
           </div>
-          <div className="floatLeft fullWidth">
+          <div id="description" className="floatLeft fullWidth">
             <h2 className="title-list-content">{languageLocale["DESCRIPTION"]}</h2>
           </div>
-          <div className="floatLeft fullWidth" style={{ marginBottom: "30px" }}>
+          <div  className="floatLeft fullWidth" style={{ marginBottom: "30px" }}>
             <p>{this.state.descriptionText1}</p>
             <p>{this.state.descriptionText2}</p>
           </div>
@@ -218,7 +260,7 @@ export default class IndividualPage extends React.Component {
                 </td>
               </tr>
               <tr>
-                <td><b>{this.state.tableh4d}</b></td>
+                <td><b>{this.state.tableh4}</b></td>
                 <td>
                   <table>
                     <tbody>
@@ -291,7 +333,7 @@ export default class IndividualPage extends React.Component {
               </div>
             </div>
           </div>
-          <div className="fullWidth floatLeft">
+          <div id="location" className="fullWidth floatLeft">
             <h2 className="title-list-content">{languageLocale["LOCATION"]}</h2>
           </div>
           <div className="fullWidth floatLeft">

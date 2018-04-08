@@ -256,7 +256,7 @@ h2 {
 }
 
 .mb30{
-  margin-bottom:30px;
+  margin-bottom:30px !important;
 }
 
 .fixed-menu{
@@ -268,5 +268,13 @@ h2 {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(232, 232, 232);
+}
+  
+.carousel.carousel-slider{
+  height:400px;
+}
+
+.carousel .thumbs{
+  text-align:center;
 }
 /******* Tour Packages css ****/
