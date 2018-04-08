@@ -10,7 +10,7 @@ body {
   min-width: 200px;
   font-size: 14px; }
 
-.carousel.carousel-slider {
+.home_div .carousel.carousel-slider {
   height: 100vh; }
 
 #root {
@@ -212,7 +212,7 @@ h2 {
   font-weight: 400; }
 
 .mb30 {
-  margin-bottom: 30px; }
+  margin-bottom: 30px !important; }
 
 .fixed-menu {
   background: #fff;
@@ -223,5 +223,11 @@ h2 {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #e8e8e8; }
+
+.carousel.carousel-slider {
+  height: 400px; }
+
+.carousel .thumbs {
+  text-align: center; }
 
 /******* Tour Packages css ****/

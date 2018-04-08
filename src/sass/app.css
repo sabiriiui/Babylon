@@ -370,10 +370,11 @@
 .dest_img_cont {
   position: relative;
   text-align: center;
-  padding: 0 15px; }
+  padding: 0 15px;
+  width: 25%; }
 
 .circleImgs {
-  width: 72%;
+  width: 80%;
   overflow: hidden; }
 
 .goLeft, .goRight {
