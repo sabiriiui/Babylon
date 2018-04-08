@@ -39,7 +39,7 @@ export default class IndividualPage extends React.Component {
 
   handleScroll() {
     let menuNode = document.getElementById('description-menu');
-    if (menuNode.getBoundingClientRect().top < 81) {
+    if (menuNode.getBoundingClientRect().top < 95) {
       this.setState({ fixedMenu: true });
     } 
     if (document.getElementById('description').getBoundingClientRect().top > 150){
@@ -167,7 +167,8 @@ export default class IndividualPage extends React.Component {
 
     let languageLocale = getLocale(DataStore.getLocale());
 
-    let menuStyle = (this.state.fixedMenu) ? {position:"fixed",top:"80px",left:"7.6%",width:"59%"} : {};
+    let menuStyle = (this.state.fixedMenu) ? {position:"fixed",top:"80px",paddingLeft:"7%",width:"100%"} : {};
+    let extraDiv = (this.state.fixedMenu) ? <div style={{height:"53px",display:"inline-block",width:"100%",marginBottom: "30px"}}></div> : "";
 
     return <div className="individual_div">
       <div className="imageConatiner">
@@ -225,6 +226,7 @@ export default class IndividualPage extends React.Component {
             <span><a href="#itinerary">{languageLocale["ITINERARY"]}</a></span>
             <span><a href="#location">{languageLocale["LOCATION"]}</a></span>
           </div>
+          {extraDiv}
           <div id="description" className="floatLeft fullWidth">
             <h2 className="title-list-content">{languageLocale["DESCRIPTION"]}</h2>
           </div>
