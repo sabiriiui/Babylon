@@ -68,7 +68,7 @@ export default class ContactusPage extends React.Component {
           <span className="discover">{languageLocale["CONTACTUS"]}</span>
         </div>
         <div>
-          <Gmaps width={'100%'} height={'60vh'} lat={coords.lat} lng={coords.lng} zoom={17} loadingMessage={'loading...'} params={params} onMapCreated={this.onMapCreated}>
+          <Gmaps width={'100%'} height={'60vh'} lat={coords.lat} lng={coords.lng} zoom={7} loadingMessage={'loading...'} params={params} onMapCreated={this.onMapCreated}>
             <Marker lat={coords.lat} lng={coords.lng} draggable={true} onDragEnd={this.onDragEnd}/>
           </Gmaps>
         </div>

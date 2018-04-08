@@ -168,7 +168,7 @@ export default class IndividualPage extends React.Component {
 
     let languageLocale = getLocale(DataStore.getLocale());
 
-    let menuStyle = (this.state.fixedMenu) ? {position:"fixed",top:"80px",paddingLeft:"7%",width:"100%"} : {};
+    let menuStyle = (this.state.fixedMenu) ? {position:"fixed",top:"80px",paddingLeft:"7%",width:"100%",backgroundColor:"#414b4e"} : {};
     let extraDiv = (this.state.fixedMenu) ? <div style={{height:"53px",display:"inline-block",width:"100%",marginBottom: "30px"}}></div> : "";
 
     return <div className="individual_div">
