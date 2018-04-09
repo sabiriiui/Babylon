@@ -11,7 +11,7 @@ body{
   font-size: 14px;
 }
 
-.carousel.carousel-slider{
+.home_div .carousel.carousel-slider{
   height: 100vh;
 }
 
@@ -69,9 +69,9 @@ h1 {
 }
 
 .left_container{
-  width:70%;
+  width:80%;
   padding:10px;
-  
+
 }
 
 .right_container{
@@ -116,7 +116,7 @@ h1 {
   padding-top:8px;
 }
 
-.facebook{  
+.facebook{
     background: #3b5999;
 }
 
@@ -140,7 +140,7 @@ h1 {
   color: #ffb300;
 }
 .details-navigation a{
-    color:#666;
+    color:#555;
     padding: 16px 20px;
     display: inline-block;
     font-size: 1.1em;
@@ -269,12 +269,16 @@ h2 {
     border-bottom-style: solid;
     border-bottom-color: rgb(232, 232, 232);
 }
-  
+
 .carousel.carousel-slider{
-  height:400px;
+  height:550px;
 }
 
 .carousel .thumbs{
   text-align:center;
+
+}
+.carousel .thumbs .thumb{
+    width: 150px !important;
 }
 /******* Tour Packages css ****/

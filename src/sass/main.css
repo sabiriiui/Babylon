@@ -10,7 +10,7 @@ body {
   min-width: 200px;
   font-size: 14px; }
 
-.carousel.carousel-slider {
+.home_div .carousel.carousel-slider {
   height: 100vh; }
 
 #root {
@@ -58,7 +58,7 @@ h1 {
   margin-right: 5px; }
 
 .left_container {
-  width: 70%;
+  width: 80%;
   padding: 10px; }
 
 .right_container {
@@ -114,7 +114,7 @@ h1 {
   color: #ffb300; }
 
 .details-navigation a {
-  color: #666;
+  color: #555;
   padding: 16px 20px;
   display: inline-block;
   font-size: 1.1em;
@@ -212,7 +212,7 @@ h2 {
   font-weight: 400; }
 
 .mb30 {
-  margin-bottom: 30px; }
+  margin-bottom: 30px !important; }
 
 .fixed-menu {
   background: #fff;
@@ -223,5 +223,14 @@ h2 {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #e8e8e8; }
+
+.carousel.carousel-slider {
+  height: 550px; }
+
+.carousel .thumbs {
+  text-align: center; }
+
+.carousel .thumbs .thumb {
+  width: 150px !important; }
 
 /******* Tour Packages css ****/

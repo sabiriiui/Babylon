@@ -41,10 +41,11 @@ export default class IndividualPage extends React.Component {
 
   handleScroll() {
     let menuNode = document.getElementById('description-menu');
-    if (menuNode.getBoundingClientRect().top < 95) {
+    if (menuNode && menuNode.getBoundingClientRect().top < 95) {
       this.setState({ fixedMenu: true });
-    } 
-    if (document.getElementById('description').getBoundingClientRect().top > 150){
+    }
+    let desc = document.getElementById('description')
+    if (desc && desc.getBoundingClientRect().top > 150){
       this.setState({ fixedMenu: false });
     }
     console.log("Scrolling");
