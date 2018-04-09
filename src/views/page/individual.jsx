@@ -11,6 +11,8 @@ import Attraction1 from '../../images/attractions/attraction10.jpg';
 import Attraction2 from '../../images/attractions/attraction13.jpg';
 import Attraction3 from '../../images/attractions/attraction14.jpg';
 
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 var Carousel = require('react-responsive-carousel').Carousel;
 
 const coords = {
@@ -223,9 +225,9 @@ export default class IndividualPage extends React.Component {
           </div>
 
           <div id="description-menu" style={menuStyle} className="details-navigation fullWidth floatLeft mb30 fixed-menu" ref="detailNavigation">
-            <span><a href="#description">{languageLocale["DESCRIPTION"]}</a></span>
-            <span><a href="#itinerary">{languageLocale["ITINERARY"]}</a></span>
-            <span><a href="#location">{languageLocale["LOCATION"]}</a></span>
+            <span><AnchorLink offset="180" href="#description">{languageLocale["DESCRIPTION"]}</AnchorLink></span>
+            <span><AnchorLink offset="140" href="#itinerary">{languageLocale["ITINERARY"]}</AnchorLink></span>
+            <span><AnchorLink offset="180" href="#location">{languageLocale["LOCATION"]}</AnchorLink></span>
           </div>
           {extraDiv}
           <div id="description" className="floatLeft fullWidth">
