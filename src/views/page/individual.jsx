@@ -16,8 +16,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 var Carousel = require('react-responsive-carousel').Carousel;
 
 const coords = {
-  lat: -8.791072,
-  lng: 115.2113233
+  lat: -8.7901327,
+  lng: 115.213337
 };
 
 const params = {
@@ -174,12 +174,12 @@ export default class IndividualPage extends React.Component {
     let extraDiv = (this.state.fixedMenu) ? <div style={{height:"53px",display:"inline-block",width:"100%",marginBottom: "30px"}}></div> : "";
 
     return <div className="individual_div">
-      <div className="imageConatiner">
+      {/*<div className="imageConatiner">
         <div className="bannerText">
           <span className="discover"> {languageLocale["INDIVIDUALTOURS"]}</span>
         </div>
-        <img src={Individual} width="100%" height="100%" />
-      </div>
+        <img src={Attraction2} width="100%" height="100%" />
+      </div>*/}
 
       <div className="main_container" style={{ background: "#fff" }}>
         <div className="left_container floatLeft bordered">

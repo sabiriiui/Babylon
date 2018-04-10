@@ -81,6 +81,11 @@
   color: #fff;
   outline: none; }
 
+#bali .honeymoon_div .imageConatiner,
+#bali .group_div .imageConatiner,
+#bali .individual_div .imageConatiner {
+  height: 40vh; }
+
 #bali .imageConatiner {
   position: relative;
   height: 100vh; }

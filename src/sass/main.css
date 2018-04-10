@@ -42,6 +42,14 @@ h1 {
   font-size: 28px;
   font-weight: 400; }
 
+.group_div .form {
+  padding: 0px !important; }
+
+.honeymoon_div .main_container,
+.group_div .main_container,
+.individual_div .main_container {
+  padding-top: 75px; }
+
 .main_container {
   width: 100%;
   padding-left: 7%;

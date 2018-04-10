@@ -110,6 +110,14 @@
     outline: none;
   }
 
+  .honeymoon_div,
+  .group_div,
+  .individual_div{
+    .imageConatiner{
+      height: 40vh;
+    }
+  }
+
   .imageConatiner{
     position: relative;
     height: 100vh;

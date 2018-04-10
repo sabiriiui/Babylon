@@ -61,7 +61,7 @@ export const EnglishLocale = {
     PUNCAK:"PUNCAK",
     BANDUNG:"BANDUNG",
     KOMODO:"KOMODO",
-    DISTINCTION:"DISTINCTION",
+    DISTINCTION:"DESTINATIONS",
     DESTINATIONS:"DESTINATIONS",
     WHYCHOOSEUS :"WHY CHOOSE US",
     HANDPICKHOTEL: "Handpicked Hotel",
@@ -82,10 +82,14 @@ export const EnglishLocale = {
     KOMODOTOORS:"KOMODO TOURS",
     LOMBOKTOORS:"LOMBOK TOURS",
     PUNCAKTOORS:"PUNCAK TOURS",
+    HAVEAQUESTION:"HAVE A QUESTION?",
+    QUESTION: "Question",
 }
 
 export const ArabicLocale = {
 
+    QUESTION: "Question",
+    HAVEAQUESTION:"HAVE A QUESTION?",
     MAILSENTMESSAGE:"Thank you for your email, we will contact you soon..",
     BABYLONHOLIDAYS: "Babylon Holidays",
     HANDPICKHOTEL: "Handpicked Hotel",

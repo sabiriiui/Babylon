@@ -14,8 +14,8 @@ import {getLocale} from '../../Utils/commonUtilities.react';
 import {Gmaps, Marker, InfoWindow, Circle} from 'react-gmaps';
 
 const coords = {
-  lat: -8.791072,
-  lng: 115.2113233
+  lat: -8.7901327,
+  lng: 115.213337
 };
 
 const params = {
@@ -33,7 +33,7 @@ export default class ContactusPage extends React.Component {
   }
 
   onMapCreated(map) {
-    map.setOptions({disableDefaultUI: true});
+    map.setOptions({disableDefaultUI: false});
   }
 
   onSubmit(e){
@@ -62,7 +62,7 @@ export default class ContactusPage extends React.Component {
 
     let languageLocale = getLocale(DataStore.getLocale());
     let sent = (this.state.emailSent)?<span className="sentemail">{languageLocale["MAILSENTMESSAGE"]}</span>:"";
-    return <div className="contactus_div">
+    return <div className="contactus_div" style={{paddingTop:"85px"}}>
       <div className="imageConatiner contactus">
         <div className="bannerText">
           <span className="discover">{languageLocale["CONTACTUS"]}</span>
@@ -102,7 +102,7 @@ export default class ContactusPage extends React.Component {
                 <i class="fa fa-clock-o"></i>WORKING HOURS</label>
               <div class="des">Mon – Fri 9:00 am – 5:30 pm, Sat 9:00 am – 1:00 pm
                 <br/>
-                  We are closed on 1st &amp; 3rd Sat of every month, Sundays &amp; public holidays</div>
+                  We are closed on Sundays &amp; public holidays</div>
               </li>
             </ul>
           </div>
