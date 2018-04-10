@@ -19,7 +19,7 @@ const MenuConfig = {
             menu: [
               {
                 name: "Indonesia",
-                link: "indonesia",
+                link: "",
                 shortDescription: "",
                 iconClass: "",
                 menu: [
@@ -52,9 +52,21 @@ const MenuConfig = {
                     link: "puncak",
                     shortDescription: "",
                     iconClass: ""
+                  },
+                  {
+                    name: "Bandung",
+                    link: "bandung",
+                    shortDescription: "",
+                    iconClass: ""
+                  },
+                  {
+                    name: "Komodo",
+                    link: "komodo",
+                    shortDescription: "",
+                    iconClass: ""
                   }
                 ]
-              } 
+              }
             ]
           },
           {

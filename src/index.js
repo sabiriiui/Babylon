@@ -13,9 +13,9 @@ import "./sass/groupform.css";
 import "./sass/language.css";
 import "./sass/services.css";
 import 'react-responsive-carousel/lib/styles/carousel.css';
-
+import { HashRouter } from 'react-router-dom';
 
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<HashRouter><App /></HashRouter>, document.getElementById('root'));
 registerServiceWorker();

@@ -4,6 +4,15 @@
     min-height: 100vh;
   }
 
+  @font-face {
+      font-family: 'toms_new_romantom';
+      src: url('./font/tomnr-webfont.woff2') format('woff2'),
+           url('./font/tomnr-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+
+  }
+
   pre{
     white-space: pre-wrap !important;
   }

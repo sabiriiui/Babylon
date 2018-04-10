@@ -1,6 +1,13 @@
 #bali .app_body_div {
   min-height: 100vh; }
 
+@font-face {
+  #bali {
+    font-family: 'toms_new_romantom';
+    src: url("./font/tomnr-webfont.woff2") format("woff2"), url("./font/tomnr-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal; } }
+
 #bali pre {
   white-space: pre-wrap !important; }
 

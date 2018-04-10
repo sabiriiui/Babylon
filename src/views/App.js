@@ -10,6 +10,15 @@ import HoneymoonPage from "./page/honeymoon.jsx";
 import GroupPage from "./page/group.jsx";
 import ServicesPage from "./page/services.jsx";
 import ContactusPage from "./page/contactus.jsx";
+
+import BaliPage from "./page/bali.jsx";
+import BandungPage from "./page/bandung.jsx";
+import GilisPage from "./page/gilis.jsx";
+import JakartaPage from "./page/jakarta.jsx";
+import KomodoPage from "./page/komodo.jsx";
+import LombokPage from "./page/lombok.jsx";
+import PuncakPage from "./page/puncak.jsx";
+
 import { DataStore } from '../stores/DataStore';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import * as Locale from '../constants/LanguageConstants';
@@ -161,6 +170,15 @@ export default class App extends React.Component {
               <Route path="/honeymoon" component={HoneymoonPage} />
               <Route path="/contactus" component={ContactusPage} />
               <Route path="/services" component={ServicesPage} />
+
+              <Route path="/bali" component={BaliPage} />
+              <Route path="/bandung" component={BandungPage} />
+              <Route path="/gilis" component={GilisPage} />
+              <Route path="/jakarta" component={JakartaPage} />
+              <Route path="/komodo" component={KomodoPage} />
+              <Route path="/lombok" component={LombokPage} />
+              <Route path="/puncak" component={PuncakPage} />
+
             </div>
 
             <Footer />
