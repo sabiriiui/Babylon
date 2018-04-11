@@ -45,9 +45,8 @@ export default class Footer extends React.Component {
             <div className="footer-copyright-div">
                 <div className="footer_icons">
                     <a href="https://www.facebook.com/babylonholidays/"><span className="floatLeft fa fa-facebook"></span></a>
-                    <span className=" floatLeft fa fa-twitter"></span>
-                    <span className="floatLeft fa fa-google"></span>
-                    <span className="floatLeft fa fa-skype"></span>
+                    <a href="https://twitter.com/Babylonholidays"><span className=" floatLeft fa fa-twitter"></span></a>
+                    <a href="https://www.instagram.com/babylonholidays"><span className="floatLeft fa fa-instagram"></span></a>
                 </div>
                 <div className="copyright"> Copyright © 2013-2018 Babylon holidays, All rights reserved</div>
             </div>

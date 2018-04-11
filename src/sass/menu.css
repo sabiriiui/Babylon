@@ -39,10 +39,11 @@
   white-space: nowrap;
   left: 5px;
   top: 150%;
-  font-size: 22px;
+  font-size: 25px;
   color: #fff;
   font-style: italic;
-  font-family: toms_new_romantom; }
+  text-transform: uppercase;
+  font-family: crimsonitalic; }
 
 .navigation-item {
   padding: 10px 18px;
