@@ -73,7 +73,7 @@ export default class GroupPage extends React.Component {
   }
 
   onMapCreated(map) {
-    map.setOptions({ disableDefaultUI: true });
+    map.setOptions({ disableDefaultUI: false });
   }
 
   getState() {
@@ -156,11 +156,15 @@ export default class GroupPage extends React.Component {
                 <span style={{ display: "block" }}>{this.state.categoryText}</span>
               </div>
               <div className="stay_details_div textAlignRight">
-                <a target="_blank" className="social-buttons facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftravelwp.physcode.com%2Fhome-4%2Ftours%2Fdiscover-singapore%2F" onclick="javascript:window.open(this.href, &quot;&quot;, &quot;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&quot;);return false;"><i class="fa fa-facebook"></i></a>
-                <a target="_blank" className="social-buttons twitter" href="https://twitter.com/share?url=http%3A%2F%2Ftravelwp.physcode.com%2Fhome-4%2Ftours%2Fdiscover-singapore%2F&amp;text=Discover Brazil" onclick="javascript:window.open(this.href, &quot;&quot;, &quot;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&quot;);return false;"><i class="fa fa-twitter"></i></a>
-                <a target="_blank" className="social-buttons pinterest" href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ftravelwp.physcode.com%2Fhome-4%2Ftours%2Fdiscover-singapore%2F&amp;description=Aliquam lacus nisl, viverra convallis sit amet penatibus nunc luctus&amp;media=http%3A%2F%2Ftravelwp.physcode.com%2Fhome-4%2Fwp-content%2Fuploads%2Fsites%2F2%2F2016%2F11%2F205b44a8-0aca-4881-bbb8-0d9ac4814be3.jpg" onclick="javascript:window.open(this.href, &quot;&quot;, &quot;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&quot;);return false;"><i class="fa fa-pinterest"></i></a>
-                <a target="_blank" className="social-buttons googleplus" href="https://plus.google.com/share?url=http%3A%2F%2Ftravelwp.physcode.com%2Fhome-4%2Ftours%2Fdiscover-singapore%2F" onclick="javascript:window.open(this.href, &quot;&quot;, &quot;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&quot;);return false;"><i class="fa fa-google"></i></a>
-              </div>
+
+                <a target="_blank" className="social-buttons facebook"
+                  href="https://www.facebook.com/babylonholidays" onclick="javascript:window.open(this.href, &quot;&quot;, &quot;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&quot;);return false;"><i class="fa fa-facebook"></i></a>
+                <a target="_blank" className="social-buttons twitter"
+                  href="https://twitter.com/Babylonholidays" onclick="javascript:window.open(this.href, &quot;&quot;, &quot;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&quot;);return false;"><i class="fa fa-twitter"></i></a>
+                <a target="_blank" className="social-buttons instagram"
+                    href="https://www.instagram.com/babylonholidays" onclick="javascript:window.open(this.href, &quot;&quot;, &quot;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&quot;);return false;"><i class="fa fa-instagram"></i></a>
+
+            </div>
             </div>
           </div>
           <div className="bordered fullWidth floatLeft" style={{ marginTop: "30px" }}>

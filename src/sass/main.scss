@@ -98,9 +98,11 @@ h1 {
 .tour_carousel .stay_details_div{
   width:33%;
   float:left;
-  display: block;
-    line-height: 1.6em;
-    font-weight: 700;
+  line-height: 1.6em;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+
 }
 
 .textAlignLeft{
@@ -116,17 +118,15 @@ h1 {
 }
 
 .social-buttons{
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   border-radius: 50%;
-  display: inline-block;
   color:#fff;
   margin-right:5px;
-}
-
-.social-buttons i{
-  padding-top:8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .facebook{
@@ -135,6 +135,10 @@ h1 {
 
 .twitter{
   background: #55acee;
+}
+
+.instagram{
+  background: #b44af1;
 }
 
 .pinterest{
@@ -150,7 +154,7 @@ h1 {
 }
 
 .details-navigation a:hover{
-  color: #ffb300;
+  opacity: 0.7;
 }
 .details-navigation a{
     color:#555;
