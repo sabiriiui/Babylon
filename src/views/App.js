@@ -34,7 +34,7 @@ export default class App extends React.Component {
 
     super();
     this.state = {
-      renderSplashscreen: true,
+      renderSplashscreen: false,
       backgroundColor: "",
       dropdownOpen: false,
       displayLanguageMenu: false

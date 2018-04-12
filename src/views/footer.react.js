@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import '../sass/footer.css'
+import '../sass/footer.css';
+import InstagramEmbed from 'react-instagram-embed';
 
 export default class Footer extends React.Component {
 
@@ -39,9 +40,22 @@ export default class Footer extends React.Component {
                     <Link to={"/contactus"}> <div className="footer-links noBorder"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Contact</span></div></Link>
                 </div>
             </div>
-
-
+            <div className="footer-sub-div ml50">
+                <InstagramEmbed
+                    url='https://www.instagram.com/p/BhONENjF25W/?taken-by=babylonholidays'
+                    maxWidth={210}
+                    hideCaption={false}
+                    containerTagName='div'
+                    protocol=''
+                    onLoading={() => { }}
+                    onSuccess={() => { }}
+                    onAfterRender={() => { }}
+                    onFailure={() => { }}
+                />
             </div>
+
+
+        </div>
             <div className="footer-copyright-div">
                 <div className="footer_icons">
                     <a href="https://www.facebook.com/babylonholidays/"><span className="floatLeft fa fa-facebook"></span></a>
