@@ -17,9 +17,11 @@ export default class BaliPage extends React.Component {
 
   render() {
     let languageLocale = getLocale(DataStore.getLocale());
-    return null;
+    return (
+      <div>Hello World</div>
+    );
 
   }
 
-
+//hello hhh
 }
