@@ -91,7 +91,7 @@ export const ArabicLocale = {
     QUESTION: "Question",
     HAVEAQUESTION:"HAVE A QUESTION?",
     MAILSENTMESSAGE:"Thank you for your email, we will contact you soon..",
-    BABYLONHOLIDAYS: "Babylon Holidays",
+    BABYLONHOLIDAYS: "بابيلون للسياحة والسفر",
     HANDPICKHOTEL: "Handpicked Hotel",
     WORLDCLASSSERVICE: "World Class Service",
     BESTPRICEGURANTEE : "Best Price Guarantee",

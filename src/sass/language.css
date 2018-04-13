@@ -4,6 +4,15 @@
 .arabic .menubar, .arabic .flexRow {
   flex-direction: row-reverse; }
 
+.arabic .footer-div-heading {
+  text-align: right; }
+
+.arabic .fa-chevron-right {
+  transform: rotate(180deg); }
+
+.arabic .navigation-container .logo .appNameSpan {
+  left: -15px; }
+
 .arabic .menubarContainer {
   justify-content: flex-start !important; }
 

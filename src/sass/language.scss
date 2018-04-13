@@ -6,6 +6,18 @@
     flex-direction: row-reverse;
   }
 
+  .footer-div-heading{
+    text-align: right;
+  }
+
+  .fa-chevron-right{
+    transform: rotate(180deg);
+  }
+
+  .navigation-container .logo .appNameSpan{
+    left:-15px;
+  }
+
   .menubarContainer{
    justify-content: flex-start !important;
   }
