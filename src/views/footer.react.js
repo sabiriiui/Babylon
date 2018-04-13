@@ -41,7 +41,7 @@ export default class Footer extends React.Component {
                     <Link to={"/contactus"}> <div className="flexRow footer-links noBorder"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Contact</span></div></Link>
                 </div>
             </div>
-            <div className="footer-sub-div ml50">
+            <div className="footer-sub-div ml50" style={{overflowY:'scroll'}}>
                 <InstagramEmbed
                     url='https://www.instagram.com/p/BhONENjF25W/?taken-by=babylonholidays'
                     maxWidth={210}
