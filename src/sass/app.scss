@@ -147,8 +147,18 @@
     margin-left: 50px;
     font-family: aria;
     z-index: 1;
-    width: 100%;
+    width: -webkit-fill-available;
+    margin-left:0px;
+    margin-right:0px;
+    padding-right:0px !important;
+  }
 
+  .display-block{
+    display: block;
+  }
+
+  .align-center{
+    text-align: center;
   }
 
   .bannerText .discover{

@@ -82,12 +82,13 @@ export default class HomePage extends React.Component {
 
     let languageLocale = getLocale(DataStore.getLocale());
 
+    let marqueeDirection = (DataStore.getLocale() == "English") ? "left" : "right";
 
     return <div className="home_div">
       <div className="imageConatiner">
 
         <div className="bannerText">
-          <marquee>
+          <marquee scrollamount="10" direction={marqueeDirection} style={{display:"flex"}}>
             <div className="flexColumn">
               <span className="discover"> {languageLocale["DISCOVERTHEBEAUTY"]}</span>
               <span className="of"> {languageLocale["OF"]} </span>
