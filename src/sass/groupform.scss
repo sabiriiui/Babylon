@@ -21,6 +21,20 @@
       flex-direction: column;
     }
 }
+.groupForm{
+  form{
+    display: flex;
+   flex-direction: column;
+   // background-color: #efe66c;
+   color: #45556a;
+   // padding: 30px;
+   width: fit-content;
+  }
+  fieldset{
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .contactus_div .formContainer{
   display: flex;

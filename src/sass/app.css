@@ -92,7 +92,16 @@
     margin-left: 50px;
     font-family: aria;
     z-index: 1;
+    width: -webkit-fill-available !important;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px !important; }
+  #bali .bannerText marquee {
     width: 100%; }
+  #bali .display-block {
+    display: block; }
+  #bali .align-center {
+    text-align: center; }
   #bali .bannerText .discover {
     text-transform: uppercase;
     font-size: 3vw;
@@ -202,9 +211,9 @@
 
 .colorChangeAnimation {
   background-color: #fafafa;
-  -webkit-transition: background-color 2000ms linear;
-  -ms-transition: background-color 2000ms linear;
-  transition: background-color 2000ms linear;
+  -webkit-transition: background-color 3000ms linear;
+  -ms-transition: background-color 3000ms linear;
+  transition: background-color 3000ms linear;
   width: 100%;
   height: 100vh;
   position: absolute;

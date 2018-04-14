@@ -15,8 +15,9 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 var Carousel = require('react-responsive-carousel').Carousel;
 const coords = {
-  lat: -8.7901327,
-  lng: 115.213337
+
+  lat: -8.790699,
+  lng: 115.213319
 };
 
 const params = {

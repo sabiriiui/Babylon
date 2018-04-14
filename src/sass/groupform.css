@@ -16,6 +16,16 @@
     display: flex;
     flex-direction: column; }
 
+.groupForm form {
+  display: flex;
+  flex-direction: column;
+  color: #45556a;
+  width: fit-content; }
+
+.groupForm fieldset {
+  display: flex;
+  flex-direction: column; }
+
 .contactus_div .formContainer {
   display: flex;
   justify-content: center; }

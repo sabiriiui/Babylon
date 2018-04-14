@@ -14,8 +14,9 @@ import {getLocale} from '../../Utils/commonUtilities.react';
 import {Gmaps, Marker, InfoWindow, Circle} from 'react-gmaps';
 
 const coords = {
-  lat: -8.7901327,
-  lng: 115.213337
+
+  lat: -8.790699,
+  lng: 115.213319
 };
 
 const params = {
@@ -68,7 +69,7 @@ export default class ContactusPage extends React.Component {
           <span className="discover">{languageLocale["CONTACTUS"]}</span>
         </div>
         <div>
-          <Gmaps width={'100%'} height={'60vh'} lat={coords.lat} lng={coords.lng} zoom={7} loadingMessage={'loading...'} params={params} onMapCreated={this.onMapCreated}>
+          <Gmaps width={'100%'} height={'60vh'} lat={coords.lat} lng={coords.lng} zoom={17} loadingMessage={'loading...'} params={params} onMapCreated={this.onMapCreated}>
             <Marker lat={coords.lat} lng={coords.lng} draggable={true} onDragEnd={this.onDragEnd}/>
           </Gmaps>
         </div>

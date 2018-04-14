@@ -23,8 +23,9 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 var Carousel = require('react-responsive-carousel').Carousel;
 
 const coords = {
-  lat: -8.7901327,
-  lng: 115.213337
+
+  lat: -8.790699,
+  lng: 115.213319
 };
 
 const params = {
@@ -312,7 +313,7 @@ export default class GroupPage extends React.Component {
           <div id="contactus" className="fullWidth floatLeft">
             <h2 className="title-list-content">{languageLocale["HAVEAQUESTION"]}</h2>
           </div>
-          <div className="">
+          <div className="groupForm">
             <Form onSubmit={this.onSubmit.bind(this)}
               action="http://babylonholidays.com/cgi-bin/bluemail" enctype="multipart/form-data" method="POST">
               <FormGroup tag="fieldset">

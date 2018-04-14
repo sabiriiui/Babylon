@@ -26,6 +26,36 @@ import AppActions from "../actions/AppActions";
 import {getLocale} from '../Utils/commonUtilities.react';
 import Footer from './footer.react';
 
+
+
+import Main from '../images/main.jpg';
+import Single from '../images/single.jpg';
+import Honeymoon from '../images/honeymoon.jpg';
+import Group from '../images/group.jpg';
+
+import WHYUS1 from '../images/chooseus1.png';
+import WHYUS2 from '../images/chooseus2.png';
+import WHYUS3 from '../images/chooseus3.png';
+import Attraction1 from '../images/attractions/attraction16.jpg';
+import Attraction2 from '../images/attractions/attraction2.jpg';
+import Attraction3 from '../images/attractions/attraction3.jpg';
+import Attraction4 from '../images/attractions/attraction5.jpg';
+import Attraction5 from '../images/attractions/attraction4.jpg';
+import Attraction6 from '../images/attractions/attraction6.jpg';
+import Attraction7 from '../images/attractions/attraction7.jpg';
+import Attraction8 from '../images/attractions/attraction8.jpg';
+import Attraction9 from '../images/attractions/attraction9.jpg';
+
+import Attraction10 from '../images/attractions/attraction10.jpg';
+import Attraction11 from '../images/attractions/attraction11.jpg';
+import Attraction12 from '../images/attractions/attraction12.jpg';
+
+import Attraction13 from '../images/attractions/attraction13.jpg';
+import Attraction14 from '../images/attractions/attraction14.jpg';
+import Attraction15 from '../images/attractions/attraction15.jpg';
+import Attraction16 from '../images/attractions/attraction1.jpg';
+
+
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 export default class App extends React.Component {
@@ -34,7 +64,7 @@ export default class App extends React.Component {
 
     super();
     this.state = {
-      renderSplashscreen: false,
+      renderSplashscreen: true,
       backgroundColor: "",
       dropdownOpen: false,
       displayLanguageMenu: false
