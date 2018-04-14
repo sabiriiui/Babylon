@@ -35,6 +35,11 @@
   }
   .formContainer form{
     align-items: flex-end;
+    flex-direction: column;
+  }
+  .formContainer fieldset{
+    display: flex;
+    flex-direction: column;
   }
   .reverse
   {

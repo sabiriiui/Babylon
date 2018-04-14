@@ -27,7 +27,12 @@
   margin-right: 0px !important; }
 
 .arabic .formContainer form {
-  align-items: flex-end; }
+  align-items: flex-end;
+  flex-direction: column; }
+
+.arabic .formContainer fieldset {
+  display: flex;
+  flex-direction: column; }
 
 .arabic .reverse {
   transform: rotate(90deg); }

@@ -386,13 +386,15 @@
 }
 
 .language-dropdown {
-    width: 100px;
-    right: 30px;
-    float: right;
-    position: absolute;
-    top: 46px;
-    cursor: pointer;
-    background-color: rgba(1, 1, 1, 0.6);
+
+  width: 100px;
+  right: 30px;
+  float: right;
+  position: absolute;
+  top: 58px;
+  cursor: pointer;
+  background-color: rgba(1, 1, 1, 0.6);
+  border-radius: 4px;
 }
 
 .language-display-div{
