@@ -12,6 +12,7 @@ import './sass/smallscreen.css';
 import "./sass/groupform.css";
 import "./sass/language.css";
 import "./sass/services.css";
+import "./sass/imageinfotile.css";
 import 'react-responsive-carousel/lib/styles/carousel.css';
 import { HashRouter } from 'react-router-dom';
 
