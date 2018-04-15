@@ -11,13 +11,8 @@ import GroupPage from "./page/group.jsx";
 import ServicesPage from "./page/services.jsx";
 import ContactusPage from "./page/contactus.jsx";
 
-import BaliPage from "./page/bali.jsx";
-import BandungPage from "./page/bandung.jsx";
-import GilisPage from "./page/gilis.jsx";
-import JakartaPage from "./page/jakarta.jsx";
-import KomodoPage from "./page/komodo.jsx";
-import LombokPage from "./page/lombok.jsx";
-import PuncakPage from "./page/puncak.jsx";
+import TourPakagesPage from "./page/pakages.jsx";
+import TourDetailPage from "./page/pakageDetails.jsx";
 
 import { DataStore } from '../stores/DataStore';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -64,7 +59,7 @@ export default class App extends React.Component {
 
     super();
     this.state = {
-      renderSplashscreen: true,
+      renderSplashscreen: false,
       backgroundColor: "",
       dropdownOpen: false,
       displayLanguageMenu: false
@@ -139,6 +134,19 @@ export default class App extends React.Component {
     let languageLocale = getLocale(DataStore.getLocale());
     let developerInfo = ""
     let result = "";
+    let tours = DataStore.getTours();
+    let toursRouts = [];
+    tours.map(t => {
+      let p = t.id;
+      toursRouts.push(<Route exact path={p} component={TourPakagesPage} />);
+      t.pakages.map((pkg)=>{
+        let p_det = t.id+":"+pkg.id;
+        toursRouts.push(<Route exact path={p_det} component={TourDetailPage} />);
+
+      });
+
+
+    });
 
     if (this.state.renderSplashscreen)
       return <div className="colorChangeAnimation" style={this.getStyle()}>
@@ -201,13 +209,7 @@ export default class App extends React.Component {
               <Route path="/contactus" component={ContactusPage} />
               <Route path="/services" component={ServicesPage} />
 
-              <Route path="/bali" component={BaliPage} />
-              <Route path="/bandung" component={BandungPage} />
-              <Route path="/gilis" component={GilisPage} />
-              <Route path="/jakarta" component={JakartaPage} />
-              <Route path="/komodo" component={KomodoPage} />
-              <Route path="/lombok" component={LombokPage} />
-              <Route path="/puncak" component={PuncakPage} />
+              {toursRouts}
 
             </div>
 
