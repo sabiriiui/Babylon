@@ -84,6 +84,10 @@ export const EnglishLocale = {
     PUNCAKTOORS:"PUNCAK TOURS",
     HAVEAQUESTION:"HAVE A QUESTION?",
     QUESTION: "Question",
+    BALI_1_TITLE:"Hello to the fairy World.",
+    BALI_1_STAY: "6 days 7 nights",
+    BALI_1_DESCRIPTION: "",
+    BALI_1_DETAIL:"to the vast place where no one can detect the benifit of this economy",
 }
 
 export const ArabicLocale = {
@@ -164,5 +168,10 @@ export const ArabicLocale = {
     KOMODOTOORS:"KOMODO TOURS",
     LOMBOKTOORS:"LOMBOK TOURS",
     PUNCAKTOORS:"PUNCAK TOURS",
+    BALI_1_TITLE:"Hello to the fairy World.",
+    BALI_1_STAY: "6 days 7 nights",
+    BALI_1_DESCRIPTION: "",
+    BALI_1_DETAIL:"سيارة مريحة مع سائق",
+
 
 }
