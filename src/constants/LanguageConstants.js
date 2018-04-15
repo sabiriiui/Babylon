@@ -90,7 +90,41 @@ export const EnglishLocale = {
     BALI_1_STAY: "6 days 7 nights",
     BALI_1_DESCRIPTION: "",
     BALI_1_DETAIL:"to the vast place where no one can detect the benifit of this economy",
-    SCROLLDOWN: "Scroll"
+    SCROLLDOWN: "Scroll",
+
+   /***************************************INDIVIDUAL PAGE *****************************************************/
+    INDIVIDUAL_TITLE:"Discover Bali",
+    INDIVIDUAL_STAY_TIME:"5 DAYS - 4 NIGHTS",
+    INIDVIDUAL_CAEGORY_TEXT:"ESCORTED TOUR, RAIL TOUR",
+    INIDIVIDUAL_DESCRIPTION_TEXT_1:"Mattis interdum nunc massa. Velit. Nonummy penatibus luctus. Aliquam. Massa aptent senectus elementum taciti.Id sodales morbi felis eu mus auctor ullamcorper. Litora. In nostra tempus, habitant. Nam tristique.",
+    INIDIVIDUAL_DESCRIPTION_TEXT_2:"Felis venenatis metus placerat taciti malesuada ultricies bibendum nunc hymenaeos orci erat mollis pretium ligula ligulamus pellentesque urna. Sagittis bibendum justo congue facilisi. Aliquam potenti sagittis etiam facilisis vehicula. Id.",
+    INIDIVIDUAL_DESCRIPTION_TEXT_3:"Ridiculus sociis dui eu vivamus tempor justo diam aliquam. Ipsum nunc purus, pede sed placerat sit habitasse potenti eleifend magna mus sociosqu hymenaeos cras metus mi donec tortor nisi leo dignissim turpis sit torquent.",
+    INIDIVIDUAL_DESCRIPTION_TEXT_4:"Potenti mattis ad mollis eleifend Phasellus adipiscing ullamcorper interdum faucibus orci litora ornare aliquam. Ligula feugiat scelerisque. Molestie. Facilisi hac.",
+    INDIVIDUAL_DAY_1_DEP_1  : "Ornare proin neque tempus cubilia cubilia blandit netus.",
+    INDIVIDUAL_DAY_1_DEP_2  : "Maecenas massa. Fermentum.",
+    INDIVIDUAL_DAY_1_DEP_P1 : "Pretium vitae tempus sem enim enim.",
+    INDIVIDUAL_DAY_1_DEP_P2 : "Tempus, leo, taciti augue aliquam hendrerit.",
+    INDIVIDUAL_DAY_1_DEP_P3 : "Accumsan pharetra eros justo augue posuere felis elit cras montes fames.",
+    INDIVIDUAL_DAY_1_DEP_P4 : "Vulputate dictumst egestas etiam dictum varius.",
+    INDIVIDUAL_DAY_2_DEP_1  : "Tortor elementum egestas metus potenti habitasse tempus natoque senectus commodo rutrum quisque fermentum. Nisi velit primis dapibus odio consequat facilisi sollicitudin porta nulla tellus sagittis platea tempor sed parturient convallis consectetuer Vulputate curae; pharetra." ,
+    INDIVIDUAL_DAY_3_DEP_1  : "Fusce sagittis viverra lorem proin porttitor conubia risus vivamus. Mollis. Luctus curabitur porta nibh penatibus aliquet nec conubia magnis semper, sem feugiat scelerisque molestie. Nibh proin dapibus phasellus lacus. Facilisi.",
+    INDIVIDUAL_DAY_4_DEP_1  : "Pretium consequat, facilisis sem in malesuada sodales et ipsum proin eleifend tincidunt, urna morbi metus quisque. Lacinia habitasse ridiculus sapien platea a cursus hendrerit tempor facilisi orci at tempor, senectus.",
+    INDIVIDUAL_DAY_5_DEP_1  : "Egestas maecenas hac nullam integer at. Lacinia habitasse ridiculus sapien platea a cursus hendrerit tempor facilisi orci at tempor, senectus.",
+    INDIVIDUAL_TABLE_H1: "DEPARTURE/RETURN LOCATION",
+    INDIVIDUAL_TABLE_H2: "DEPARTURE TIME",
+    INDIVIDUAL_TABLE_H3: "INCLUDED",
+    INDIVIDUAL_TABLE_H4: "NOT INCLUDED",
+    INDIVIDUAL_TABLE_H1D  : "San Francisco International Airport",
+    INDIVIDUAL_TABLE_H2D  : "Please arrive at least 2 hours before the flight.",
+    INDIVIDUAL_TABLE_H3D1 : "Airfare",
+    INDIVIDUAL_TABLE_H3D2 : "Accommodations",
+    INDIVIDUAL_TABLE_H3D3 : "2 days cruise	",
+    INDIVIDUAL_TABLE_H3D4 : "Professional guide",
+    INDIVIDUAL_TABLE_H4D1 : "Entrance fees",
+    INDIVIDUAL_TABLE_H4D2 : "Professional guide"
+
+   /************************************************************************************************************/ 
+
 }
 
 export const ArabicLocale = {
@@ -176,5 +210,38 @@ export const ArabicLocale = {
     BALI_1_DESCRIPTION: "",
     BALI_1_DETAIL:"سيارة مريحة مع سائق",
 
+    
+   /***************************************INDIVIDUAL PAGE *****************************************************/
+    INDIVIDUAL_TITLE:"Discover Bali",
+    INDIVIDUAL_STAY_TIME:"5 DAYS - 4 NIGHTS",
+    INIDVIDUAL_CAEGORY_TEXT:"ESCORTED TOUR, RAIL TOUR",
+    INIDIVIDUAL_DESCRIPTION_TEXT_1:"Mattis interdum nunc massa. Velit. Nonummy penatibus luctus. Aliquam. Massa aptent senectus elementum taciti.Id sodales morbi felis eu mus auctor ullamcorper. Litora. In nostra tempus, habitant. Nam tristique.",
+    INIDIVIDUAL_DESCRIPTION_TEXT_2:"Felis venenatis metus placerat taciti malesuada ultricies bibendum nunc hymenaeos orci erat mollis pretium ligula ligulamus pellentesque urna. Sagittis bibendum justo congue facilisi. Aliquam potenti sagittis etiam facilisis vehicula. Id.",
+    INIDIVIDUAL_DESCRIPTION_TEXT_3:"Ridiculus sociis dui eu vivamus tempor justo diam aliquam. Ipsum nunc purus, pede sed placerat sit habitasse potenti eleifend magna mus sociosqu hymenaeos cras metus mi donec tortor nisi leo dignissim turpis sit torquent.",
+    INIDIVIDUAL_DESCRIPTION_TEXT_4:"Potenti mattis ad mollis eleifend Phasellus adipiscing ullamcorper interdum faucibus orci litora ornare aliquam. Ligula feugiat scelerisque. Molestie. Facilisi hac.",
+    INDIVIDUAL_DAY_1_DEP_1  : "Ornare proin neque tempus cubilia cubilia blandit netus.",
+    INDIVIDUAL_DAY_1_DEP_2  : "Maecenas massa. Fermentum.",
+    INDIVIDUAL_DAY_1_DEP_P1 : "Pretium vitae tempus sem enim enim.",
+    INDIVIDUAL_DAY_1_DEP_P2 : "Tempus, leo, taciti augue aliquam hendrerit.",
+    INDIVIDUAL_DAY_1_DEP_P3 : "Accumsan pharetra eros justo augue posuere felis elit cras montes fames.",
+    INDIVIDUAL_DAY_1_DEP_P4 : "Vulputate dictumst egestas etiam dictum varius.",
+    INDIVIDUAL_DAY_2_DEP_1  : "Tortor elementum egestas metus potenti habitasse tempus natoque senectus commodo rutrum quisque fermentum. Nisi velit primis dapibus odio consequat facilisi sollicitudin porta nulla tellus sagittis platea tempor sed parturient convallis consectetuer Vulputate curae; pharetra." ,
+    INDIVIDUAL_DAY_3_DEP_1  : "Fusce sagittis viverra lorem proin porttitor conubia risus vivamus. Mollis. Luctus curabitur porta nibh penatibus aliquet nec conubia magnis semper, sem feugiat scelerisque molestie. Nibh proin dapibus phasellus lacus. Facilisi.",
+    INDIVIDUAL_DAY_4_DEP_1  : "Pretium consequat, facilisis sem in malesuada sodales et ipsum proin eleifend tincidunt, urna morbi metus quisque. Lacinia habitasse ridiculus sapien platea a cursus hendrerit tempor facilisi orci at tempor, senectus.",
+    INDIVIDUAL_DAY_5_DEP_1  : "Egestas maecenas hac nullam integer at. Lacinia habitasse ridiculus sapien platea a cursus hendrerit tempor facilisi orci at tempor, senectus.",
+    INDIVIDUAL_TABLE_H1: "DEPARTURE/RETURN LOCATION",
+    INDIVIDUAL_TABLE_H2: "DEPARTURE TIME",
+    INDIVIDUAL_TABLE_H3: "INCLUDED",
+    INDIVIDUAL_TABLE_H4: "NOT INCLUDED",
+    INDIVIDUAL_TABLE_H1D  : "San Francisco International Airport",
+    INDIVIDUAL_TABLE_H2D  : "Please arrive at least 2 hours before the flight.",
+    INDIVIDUAL_TABLE_H3D1 : "Airfare",
+    INDIVIDUAL_TABLE_H3D2 : "Accommodations",
+    INDIVIDUAL_TABLE_H3D3 : "2 days cruise	",
+    INDIVIDUAL_TABLE_H3D4 : "Professional guide",
+    INDIVIDUAL_TABLE_H4D1 : "Entrance fees",
+    INDIVIDUAL_TABLE_H4D2 : "Professional guide"
+
+   /************************************************************************************************************/ 
 
 }

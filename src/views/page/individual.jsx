@@ -58,40 +58,39 @@ export default class IndividualPage extends React.Component {
   }
 
   getState() {
-
-    let language = DataStore.getLocale();
-    let isEnglish = (language == "English")
+ 
+    let languageLocale = getLocale(DataStore.getLocale()); 
     return {
       fixedMenu: false,
-      title: (isEnglish) ? "Discover Bali" : "",
-      stayTime: (isEnglish) ? "5 DAYS - 4 NIGHTS" : "",
-      categoryText: (isEnglish) ? "ESCORTED TOUR, RAIL TOUR" : "",
-      descriptionText1: (isEnglish) ? "Mattis interdum nunc massa. Velit. Nonummy penatibus luctus. Aliquam. Massa aptent senectus elementum taciti.Id sodales morbi felis eu mus auctor ullamcorper. Litora. In nostra tempus, habitant. Nam tristique." : "",
-      descriptionText2: (isEnglish) ? "Felis venenatis metus placerat taciti malesuada ultricies bibendum nunc hymenaeos orci erat mollis pretium ligula ligulamus pellentesque urna. Sagittis bibendum justo congue facilisi. Aliquam potenti sagittis etiam facilisis vehicula. Id." : "",
-      descriptionText3: (isEnglish) ? "Ridiculus sociis dui eu vivamus tempor justo diam aliquam. Ipsum nunc purus, pede sed placerat sit habitasse potenti eleifend magna mus sociosqu hymenaeos cras metus mi donec tortor nisi leo dignissim turpis sit torquent." : "",
-      descriptionText4: (isEnglish) ? "Potenti mattis ad mollis eleifend Phasellus adipiscing ullamcorper interdum faucibus orci litora ornare aliquam. Ligula feugiat scelerisque. Molestie. Facilisi hac." : "",
-      day1departure1: (isEnglish) ? "Ornare proin neque tempus cubilia cubilia blandit netus." : "",
-      day1departure2: (isEnglish) ? "Maecenas massa. Fermentum." : "",
-      day1departurep1: (isEnglish) ? "Pretium vitae tempus sem enim enim." : "",
-      day1departurep2: (isEnglish) ? "Tempus, leo, taciti augue aliquam hendrerit." : "",
-      day1departurep3: (isEnglish) ? "Accumsan pharetra eros justo augue posuere felis elit cras montes fames." : "",
-      day1departurep4: (isEnglish) ? "Vulputate dictumst egestas etiam dictum varius." : "",
-      day2departure: (isEnglish) ? "Tortor elementum egestas metus potenti habitasse tempus natoque senectus commodo rutrum quisque fermentum. Nisi velit primis dapibus odio consequat facilisi sollicitudin porta nulla tellus sagittis platea tempor sed parturient convallis consectetuer Vulputate curae; pharetra." : "",
-      day3departure: (isEnglish) ? "Fusce sagittis viverra lorem proin porttitor conubia risus vivamus. Mollis. Luctus curabitur porta nibh penatibus aliquet nec conubia magnis semper, sem feugiat scelerisque molestie. Nibh proin dapibus phasellus lacus. Facilisi." : "",
-      day4departure: (isEnglish) ? "Pretium consequat, facilisis sem in malesuada sodales et ipsum proin eleifend tincidunt, urna morbi metus quisque. Lacinia habitasse ridiculus sapien platea a cursus hendrerit tempor facilisi orci at tempor, senectus." : "",
-      day5departure: (isEnglish) ? "Egestas maecenas hac nullam integer at. Lacinia habitasse ridiculus sapien platea a cursus hendrerit tempor facilisi orci at tempor, senectus." : "",
-      tableh1: (isEnglish) ? "DEPARTURE/RETURN LOCATION" : "",
-      tableh2: (isEnglish) ? "DEPARTURE TIME" : "",
-      tableh3: (isEnglish) ? "INCLUDED" : "",
-      tableh4: (isEnglish) ? "NOT INCLUDED" : "",
-      tableh1d: (isEnglish) ? "San Francisco International Airport" : "",
-      tableh2d: (isEnglish) ? "Please arrive at least 2 hours before the flight." : "",
-      tableh3d1: (isEnglish) ? "Airfare" : "",
-      tableh3d2: (isEnglish) ? "Accommodations" : "",
-      tableh3d3: (isEnglish) ? "2 days cruise	" : "",
-      tableh3d4: (isEnglish) ? "Professional guide" : "",
-      tableh4d1: (isEnglish) ? "Entrance fees" : "",
-      tableh4d2: (isEnglish) ? "Professional guide" : ""
+      title: languageLocale["INDIVIDUAL_TITLE"],
+      stayTime: languageLocale["INDIVIDUAL_STAY_TIME"],
+      categoryText: languageLocale["INIDVIDUAL_CAEGORY_TEXT"],
+      descriptionText1: languageLocale["INIDIVIDUAL_DESCRIPTION_TEXT_1"],
+      descriptionText2: languageLocale["INIDIVIDUAL_DESCRIPTION_TEXT_2"],
+      descriptionText3: languageLocale["INIDIVIDUAL_DESCRIPTION_TEXT_3"],
+      descriptionText4: languageLocale["INIDIVIDUAL_DESCRIPTION_TEXT_4"],
+      day1departure1: languageLocale["INDIVIDUAL_DAY_1_DEP_1"],
+      day1departure2: languageLocale["INDIVIDUAL_DAY_1_DEP_2"],
+      day1departurep1:languageLocale["INDIVIDUAL_DAY_1_DEP_P1"],
+      day1departurep2:languageLocale["INDIVIDUAL_DAY_1_DEP_P2"],
+      day1departurep3:languageLocale["INDIVIDUAL_DAY_1_DEP_P3"],
+      day1departurep4:languageLocale["INDIVIDUAL_DAY_1_DEP_P4"],
+      day2departure:  languageLocale["INDIVIDUAL_DAY_2_DEP_1"],
+      day3departure:  languageLocale["INDIVIDUAL_DAY_3_DEP_1"],
+      day4departure:  languageLocale["INDIVIDUAL_DAY_4_DEP_1"],
+      day5departure:  languageLocale["INDIVIDUAL_DAY_5_DEP_1"],
+      tableh1: languageLocale["INDIVIDUAL_TABLE_H1"],
+      tableh2: languageLocale["INDIVIDUAL_TABLE_H2"],
+      tableh3: languageLocale["INDIVIDUAL_TABLE_H3"],
+      tableh4: languageLocale["INDIVIDUAL_TABLE_H4"],
+      tableh1d:  languageLocale["INDIVIDUAL_TABLE_H1D"],
+      tableh2d:  languageLocale["INDIVIDUAL_TABLE_H2D"],
+      tableh3d1: languageLocale["INDIVIDUAL_TABLE_H3D1"],
+      tableh3d2: languageLocale["INDIVIDUAL_TABLE_H3D2"],
+      tableh3d3: languageLocale["INDIVIDUAL_TABLE_H3D3"],
+      tableh3d4: languageLocale["INDIVIDUAL_TABLE_H3D4"],
+      tableh4d1: languageLocale["INDIVIDUAL_TABLE_H4D1"],
+      tableh4d2: languageLocale["INDIVIDUAL_TABLE_H4D2"]
 
     }
   }
