@@ -44,7 +44,7 @@ export default class MenuItem extends React.Component {
                 </div>
 
                 {this.state.menuToDisplay == this.props.name ? (this.props.innerMenu) ?
-                    <div style={{ position: "absolute",marginTop:"-28px", background: "rgba(1, 1, 1, 0.6)", zIndex: "5", marginLeft: "180px" }}>
+                    <div style={{ position: "absolute",marginTop:"-28px", zIndex: "5", marginLeft: "180px" }}>
                         {this.props.innerMenu}
                     </div>
                     : ""

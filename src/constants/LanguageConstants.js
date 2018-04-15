@@ -1,6 +1,8 @@
 export const EnglishLocale = {
     MAILSENTMESSAGE:"Thank you for your email, we will contact you soon..",
     BABYLONHOLIDAYS: "Babylon Holidays",
+    BABYLON: "Babylon",
+    HOLIDAYS:"Holidays",
     HOME: "HOME",
     TOURS: "TOURS",
     SERVICES: "SERVICES",
@@ -8,7 +10,7 @@ export const EnglishLocale = {
     INDIVIDUAL:"INDIVIDUAL",
     HONEYMOON:"HONEYMOON",
     GROUP:"GROUP",
-    DISCOVERTHEBEAUTY:"discover the beauty",
+    DISCOVERTHEBEAUTY:"discover the beauty of bali",
     OF:"of",
     BALI:"Bali",
     BOOKATOUR:"Book a tour",
@@ -88,6 +90,7 @@ export const EnglishLocale = {
     BALI_1_STAY: "6 days 7 nights",
     BALI_1_DESCRIPTION: "",
     BALI_1_DETAIL:"to the vast place where no one can detect the benifit of this economy",
+    SCROLLDOWN: "Scroll"
 }
 
 export const ArabicLocale = {

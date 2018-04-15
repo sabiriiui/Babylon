@@ -43,7 +43,7 @@ export default class HomePage extends React.Component {
 
   gotoTours() {
 
-    document.getElementById("root").scrollTop = (window.innerHeight - 70);
+    document.getElementsByTagName("body")[0].scrollTop = (window.innerHeight - 70);
   }
 
   goLeft(){
@@ -88,15 +88,16 @@ export default class HomePage extends React.Component {
       <div className="imageConatiner">
 
         <div className="bannerText">
-          <marquee scrollamount="10" direction={marqueeDirection} style={{display:"flex"}}>
+          <span style={{display:"flex"}}>
             <div className="flexColumn">
+              <span className="babylon"> {languageLocale["BABYLON"]} </span>
+              <span className="holidays"> {languageLocale["HOLIDAYS"]} </span>
               <span className="discover"> {languageLocale["DISCOVERTHEBEAUTY"]}</span>
-              <span className="of"> {languageLocale["OF"]} </span>
-              <span className="bali"> {languageLocale["BALI"]} </span>
+
             </div>
-          </marquee>
+          </span>
           <div className="bookTourBtn">
-            <button type="button" class="btn btn-secondary btn-lg" onClick={this.gotoTours.bind(this)}>{languageLocale["BOOKATOUR"]}</button>
+            <button type="button" class="btn btn-secondary btn-lg" onClick={this.gotoTours.bind(this)}>{languageLocale["SCROLLDOWN"]}</button>
           </div>
         </div>
         <Carousel/>

@@ -56,7 +56,7 @@
   #bali legend {
     text-align: center;
     border-bottom: 1px solid #acaf09;
-    color: #45556a; }
+    color: #b49c73; }
   #bali .sentemail {
     text-transform: none;
     color: #599959;
@@ -84,11 +84,11 @@
     height: 100%; }
   #bali .bannerText {
     position: absolute;
-    top: 27%;
+    top: 67%;
     color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-left: 50px;
     font-family: aria;
     z-index: 1;
@@ -104,7 +104,7 @@
     text-align: center; }
   #bali .bannerText .discover {
     text-transform: uppercase;
-    font-size: 3vw;
+    font-size: 14px;
     font-family: serif; }
   #bali .bannerText .of {
     font-size: 2vw;
@@ -115,7 +115,7 @@
     font-size: 6vw; }
   #bali .bookTourBtn {
     bottom: 0px;
-    margin-top: 100px; }
+    margin-top: 30px; }
   #bali .bookTourBtn .btn:hover,
   #bali .bookTourBtn .btn {
     background-color: transparent;
@@ -134,15 +134,13 @@
   #bali .pakagesContainer {
     display: flex;
     flex-direction: column;
-    padding-bottom: 30px;
-    background: linear-gradient(to bottom, #f3f3f3, #f8fbfc); }
+    padding-bottom: 30px; }
   #bali .pakagesContainer .heading {
     text-transform: uppercase;
     height: 120px;
     line-height: 120px;
     font-size: 25px;
-    font-family: Avenir Next,Helvetica,Arial,sans-serif;
-    color: #45556a; }
+    font-family: Avenir Next,Helvetica,Arial,sans-serif; }
   #bali .image_tileContainer .image {
     height: 370px; }
   #bali .image_tileContainer:hover .footer {

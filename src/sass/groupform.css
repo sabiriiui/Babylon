@@ -2,15 +2,12 @@
   padding-left: 80px;
   padding-top: 35px;
   padding-bottom: 20px;
-  color: #58585A;
   padding: 40px;
   text-transform: uppercase;
-  white-space: nowrap;
-  color: #58585A; }
+  white-space: nowrap; }
   .formContainer form {
     display: flex;
     flex-direction: column;
-    color: #45556a;
     width: fit-content; }
   .formContainer fieldset {
     display: flex;
@@ -19,7 +16,7 @@
 .groupForm form {
   display: flex;
   flex-direction: column;
-  color: #45556a;
+  /* color: #45556a; */
   width: fit-content; }
 
 .groupForm fieldset {

@@ -128,7 +128,7 @@ export default class GroupPage extends React.Component {
     let languageLocale = getLocale(DataStore.getLocale());
     let sent = (this.state.emailSent)?<span className="sentemail">{languageLocale["MAILSENTMESSAGE"]}</span>:"";
 
-    let menuStyle = (this.state.fixedMenu) ? {position:"fixed",top:"80px",paddingLeft:"7%",width:"100%"} : {};
+    let menuStyle = (this.state.fixedMenu) ? {position:"fixed",top:"0px",paddingLeft:"7%",width:"100%"} : {};
     let extraDiv = (this.state.fixedMenu) ? <div style={{height:"53px",display:"inline-block",width:"100%",marginBottom: "30px"}}></div> : "";
 
     return <div className="group_div">
@@ -139,7 +139,7 @@ export default class GroupPage extends React.Component {
         <img src={Attraction2} width="100%" height="100%" />
       </div>*/}
 
-      <div className="main_container" style={{ background: "#fff" }}>
+      <div className="main_container">
         <div className="left_container floatLeft bordered">
           <div className>
             <h1>{this.state.title}</h1>

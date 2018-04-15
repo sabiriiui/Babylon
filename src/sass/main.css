@@ -5,10 +5,11 @@
 
 body {
   margin: 0px;
-  background-color: #fafafa;
+  background-color: #272c32;
   font-family: "Roboto",Arial,Helvetica,sans-serif;
   min-width: 200px;
-  font-size: 14px; }
+  font-size: 14px;
+  color: #afa488; }
 
 .home_div .carousel.carousel-slider {
   height: 100vh; }
@@ -16,8 +17,7 @@ body {
 #root {
   position: absolute;
   height: 100%;
-  width: 100%;
-  color: #45556a; }
+  width: 100%; }
 
 .appDiv {
   height: 80%;
@@ -28,10 +28,10 @@ body {
   justify-content: center; }
 
 .navigation-container {
-  background: rgba(1, 1, 1, 0.6);
+  color: #f2f2f2;
   width: 100%;
   height: 85px;
-  position: fixed;
+  position: absolute;
   top: 0;
   display: flex;
   align-items: center;
@@ -125,7 +125,7 @@ h1 {
   opacity: 0.7; }
 
 .details-navigation a {
-  color: #555;
+  color: #afa488;
   padding: 16px 20px;
   display: inline-block;
   font-size: 1.1em;
@@ -174,9 +174,9 @@ p {
   margin: 0 0 10px; }
 
 .interary-item .icon-left {
-  border: 2px dashed #26bdf7;
+  border: 2px dashed #afa488;
   color: #fff;
-  background: #26bdf7; }
+  background: #afa488; }
 
 .interary-item .icon-left {
   position: absolute;
@@ -200,7 +200,7 @@ p {
 
 .interary-item:hover .icon-left {
   background: 0 0;
-  color: #26bdf7; }
+  color: #afa488; }
 
 .interary-item .item_content ul, .interary-item .item_content ol {
   margin: 0 0 1.5em 2em; }
@@ -226,7 +226,7 @@ h2 {
   margin-bottom: 30px !important; }
 
 .fixed-menu {
-  background: #fff;
+  background-color: #272c32;
   left: 0;
   right: 0;
   z-index: 1;
@@ -243,5 +243,16 @@ h2 {
 
 .carousel .thumbs .thumb {
   width: 150px !important; }
+
+.babylon {
+  font-size: 48px;
+  color: #afa488;
+  text-transform: uppercase; }
+
+.holidays {
+  font-size: 36px;
+  color: #afa488;
+  text-transform: uppercase;
+  margin-bottom: 30px; }
 
 /******* Tour Packages css ****/
