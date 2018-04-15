@@ -1,21 +1,21 @@
 .headingInfo{
-  top: 85px;
-      text-align: center;
-      height: 50px;
-      font-size: 26pt;
-      font-weight: bold;
-      position: fixed;
-      width: 100%;
-      background: #272c32;
+  margin-top: 100px;
+  text-align: center;
+  height: 50px;
+  font-size: 26pt;
+  font-weight: bold;
+  background: #272c32;
 }
 .tile_infoContainer {
-  margin-top: 150px;
+
   margin-left: 20px;
   margin-right: 20px;
   border-style: solid;
   border-width: 1px;
   border-color: #ccc;
-  width: 410px;
+  width: 30%;
+  margin-top: 10px;
+  min-width: 400px;
 }
 
 
@@ -27,8 +27,8 @@
 
 .infoTilePrice {
   text-align: right;
-  font-size: 24pt;
-  color: orange;
+  font-size: 1.5em;
+  color: #ffb300;;
 }
 
 .infoTileCaption {
@@ -40,7 +40,10 @@
 
 .infoTilePriceLabel {
   text-align: right;
-  width: 20%;
+width: 20%;
+display: block;
+font-size: 1em;
+color: #a2a2a2;
   }
 
 .infoTileHead {
