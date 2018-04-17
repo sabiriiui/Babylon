@@ -32,6 +32,8 @@ import Attraction14 from '../../images/attractions/attraction14.jpg';
 import Attraction15 from '../../images/attractions/attraction15.jpg';
 import Attraction16 from '../../images/attractions/attraction1.jpg';
 
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 
 export default class HomePage extends React.Component {
 
@@ -43,7 +45,7 @@ export default class HomePage extends React.Component {
 
   gotoTours() {
 
-    document.getElementsByTagName("body")[0].scrollTop = (window.innerHeight - 70);
+    // document.getElementsByTagName("html")[0].scrollTop = (window.innerHeight);
   }
 
   goLeft(){
@@ -97,7 +99,13 @@ export default class HomePage extends React.Component {
             </div>
           </span>
           <div className="bookTourBtn">
-            <button type="button" class="btn btn-secondary btn-lg" onClick={this.gotoTours.bind(this)}>{languageLocale["SCROLLDOWN"]}</button>
+
+
+            <button type="button" class="btn btn-secondary btn-lg">
+              <AnchorLink offset="0" href="#tours">
+                {languageLocale["SCROLLDOWN"]}
+              </AnchorLink>
+            </button>
           </div>
         </div>
         <Carousel/>
@@ -105,7 +113,7 @@ export default class HomePage extends React.Component {
 
       </div>
 
-      <div className="pakagesContainer">
+      <div className="pakagesContainer" id="tours">
 
         <div className="destinationContainer">
           <span className="heading">{languageLocale["DESTINATIONS"]}</span>
@@ -137,8 +145,8 @@ export default class HomePage extends React.Component {
               <div className="chooseUsItem flexColumn">
                 <img width="200px" height="200px" src={WHYUS1}></img>
                 <h3>{languageLocale["HANDPICKHOTEL"]}</h3>
-                <div style={{textAlign:"center"}}>Lorem ipsum dolor sit amet,
-                   consectetur adipisicing elit,
+                <div style={{textAlign:"center"}}>Lorem ipsum dolor sit amet,<br/>
+                   consectetur adipisicing elit,<br/>
                     sed do eiusmod.
                 </div>
               </div>
@@ -146,8 +154,8 @@ export default class HomePage extends React.Component {
               <div className="chooseUsItem flexColumn">
                 <img width="200px" height="200px" src={WHYUS2}></img>
                 <h3>{languageLocale["WORLDCLASSSERVICE"]}</h3>
-                <div style={{textAlign:"center"}}>Lorem ipsum dolor sit amet,
-                   consectetur adipisicing elit,
+                <div style={{textAlign:"center"}}>Lorem ipsum dolor sit amet,<br/>
+                   consectetur adipisicing elit,<br/>
                     sed do eiusmod.
                 </div>
               </div>
@@ -155,8 +163,8 @@ export default class HomePage extends React.Component {
               <div className="chooseUsItem flexColumn">
                 <img width="200px" height="200px" src={WHYUS3}></img>
                 <h3>{languageLocale["BESTPRICEGURANTEE"]}</h3>
-                <div style={{textAlign:"center"}}>Lorem ipsum dolor sit amet,
-                   consectetur adipisicing elit,
+                <div style={{textAlign:"center"}}>Lorem ipsum dolor sit amet,<br/>
+                   consectetur adipisicing elit,<br/>
                     sed do eiusmod.
                 </div>
               </div>

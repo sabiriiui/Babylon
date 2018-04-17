@@ -4,7 +4,7 @@
   height: 50px;
   font-size: 26pt;
   font-weight: bold;
-  background: #272c32;
+  // background: #272c32;
 }
 .tile_infoContainer {
 
@@ -21,29 +21,31 @@
 
 .infoTiles {
   width: 100%;
+  padding-top: 5%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .infoTilePrice {
   text-align: right;
   font-size: 1.5em;
-  color: #ffb300;;
+  color: #b49c73;
 }
 
 .infoTileCaption {
   width: 80%;
-  font-size: 20pt;
-  color: black;
+  font-size: 15pt;
   font-weight: bold;
 }
 
 .infoTilePriceLabel {
   text-align: right;
-width: 20%;
-display: block;
-font-size: 1em;
-color: #a2a2a2;
+  width: 16%;
+  display: block;
+  font-size: 1em;
+  /* padding-bottom: 8px; */
+  color: #a2a2a2;
   }
 
 .infoTileHead {
@@ -53,7 +55,11 @@ color: #a2a2a2;
 }
 
 .infoTileBody{
-
+  font-family: Roboto,Helvetica,Arial,sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+color: #b7b7b7;
 }
 
 .lineSeparator{
@@ -72,8 +78,13 @@ color: #a2a2a2;
   width: 20%;
   text-align: right;
   cursor: pointer;
-  color: orange;
+  color: #b49c73;
 }
+
+.infoMore:hover{
+    text-decoration: underline;
+}
+
 .infoDays{
   width: 80%;
   font-size: 12pt;
@@ -81,4 +92,9 @@ color: #a2a2a2;
 .infoDetailContainer{
   margin-left: 15px;
   margin-right: 10px;
+}
+
+.image_tileContainer:hover{
+  opacity: 0.7;
+  cursor: pointer;
 }

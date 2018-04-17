@@ -66,7 +66,9 @@ export default class ContactusPage extends React.Component {
     return <div className="contactus_div" style={{paddingTop:"85px"}}>
       <div className="imageConatiner contactus">
         <div className="bannerText">
-          <span className="discover">{languageLocale["CONTACTUS"]}</span>
+          <span className="discover">
+          {/*{languageLocale["CONTACTUS"]}*/}
+        </span>
         </div>
         <div>
           <Gmaps width={'100%'} height={'60vh'} lat={coords.lat} lng={coords.lng} zoom={17} loadingMessage={'loading...'} params={params} onMapCreated={this.onMapCreated}>

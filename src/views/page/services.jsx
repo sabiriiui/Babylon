@@ -17,11 +17,10 @@ import Hotel3 from '../../images/hotel/hotel3.jpg';
 import Hotel4 from '../../images/hotel/hotel4.jpg';
 import Hotel5 from '../../images/hotel/hotel5.jpg';
 
-import Car1 from '../../images/car/car1.jpg';
-import Car2 from '../../images/car/car2.jpg';
-import Car3 from '../../images/car/car3.jpg';
-import Car4 from '../../images/car/car4.jpg';
-import Car5 from '../../images/car/car5.png';
+import Car1 from '../../images/car/car1.png';
+import Car2 from '../../images/car/car2.png';
+import Car3 from '../../images/car/car3.png';
+import Car4 from '../../images/car/car4.png';
 
 import {DataStore} from '../../stores/DataStore';
 import {getLocale} from '../../Utils/commonUtilities.react';
@@ -70,31 +69,6 @@ export default class ServicesPage extends React.Component {
   }
 
   render() {
-    let {tourType, stayAt, stayType} = {
-      tourType: "honeymoon",
-      stayAt: "hotel",
-      stayType: "luxury"
-    };
-    if (this.props.location && this.props.location.state) {
-      tourType = this.props.location.state.tourType;
-      stayAt = this.props.location.state.stayAt;
-      stayType = this.props.location.state.stayType;
-
-    }
-
-    let bcrumb = <div className="breadcrumb">
-      <span>home</span>
-      <span className="reverse">></span>
-      <span>tours</span>
-      <span className="reverse">></span>
-      <span>{tourType + " tours"}</span>
-      <span className="reverse">></span>
-      <span>{"stay at " + stayAt}</span>
-      <span className="reverse">></span>
-      <span>{stayType}</span>
-    </div>;
-
-    let title = stayType + " " + tourType + " tours";
 
     let languageLocale = getLocale(DataStore.getLocale());
     let sent = (this.state.emailSent)?<span className="sentemail">{languageLocale["MAILSENTMESSAGE"]}</span>:"";
@@ -103,14 +77,12 @@ export default class ServicesPage extends React.Component {
       <div className="imageConatiner">
         <div className="bannerText">
           <span className="discover">
-            {title}
+            {/*{languageLocale["SERVICES"]}*/}
           </span>
         </div>
         <img src={ServicesImage} width="100%" height="100%"/>
       </div>
       <div className="services_body">
-        {bcrumb}
-
         <div className="container">
           <div className="heading_underline">{languageLocale["HIGHLIGHTS"]}
           </div>
@@ -164,6 +136,7 @@ export default class ServicesPage extends React.Component {
 
           <div className="transportCauroselDiv">
             <Carousel
+              style={{width:"40%"}}
               showStatus={false}
               showThumbs={false}
               autoPlay={true}
@@ -181,9 +154,6 @@ export default class ServicesPage extends React.Component {
               </div>
               <div>
                 <img src={Car4}/>
-              </div>
-              <div>
-                <img src={Car5}/>
               </div>
             </Carousel>
           </div>
@@ -256,7 +226,7 @@ export default class ServicesPage extends React.Component {
                 </FormGroup>
                 <FormGroup>
                   <Label for="phoneField">{languageLocale["PHONENUMBER"]}</Label>
-                  <ReactPhoneInput ref={(ph)=>this.phone = ph} defaultCountry={'pk'} regions={['america', 'europe', 'asia', 'oceania', 'africa']}/>
+                  <ReactPhoneInput ref={(ph)=>this.phone = ph} />
                 </FormGroup>
                 <FormGroup>
                   <Label for="emailField">{languageLocale["FORMEMAIL"]}</Label>

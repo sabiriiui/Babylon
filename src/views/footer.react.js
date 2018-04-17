@@ -24,20 +24,19 @@ export default class Footer extends React.Component {
             <div className="footer-sub-div ml50">
                 <h3 className="footer-div-heading">Information</h3>
                 <div className="footer-links-div">
-                    <a href="#"><div className="flexRow footer-links noTopPadding"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Press Center</span></div></a>
-                    <a href="#"><div className="flexRow footer-links"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Travel News</span></div></a>
-                    <a href="#"><div className="flexRow footer-links"><i class="fa fa-chevron-right"></i><span className="footer-link-text">About Us</span></div></a>
-                    <a href="#"><div className="flexRow footer-links"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Privacy Policy</span></div></a>
+                    <Link to=""><div className="flexRow footer-links"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Blogs</span></div></Link>
+                    <Link to=""><div className="flexRow footer-links"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Privacy Policy</span></div></Link>
                     <Link to={"/contactus"}> <div className="flexRow footer-links noBorder"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Contact Us</span></div></Link>
                 </div>
             </div>
             <div className="footer-sub-div ml50">
                 <h3 className="footer-div-heading">Our Menu</h3>
                 <div className="footer-links-div">
-                    <a href="#"><div className="flexRow footer-links noTopPadding"><i class="fa fa-chevron-right"></i><span className="footer-link-text">About Us</span></div></a>
-                    <a href="#"><div className="flexRow footer-links"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Carrer</span></div></a>
-                    <a href="#"><div className="flexRow footer-links"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Terms</span></div></a>
-                    <a href="#"><div className="flexRow footer-links"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Privacy Policy</span></div></a>
+                    <Link to="/">
+                      <div className="flexRow footer-links noTopPadding"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Home</span></div></Link>
+                    <Link to="/"><div className="flexRow footer-links"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Tours</span></div></Link>
+                    <Link to="#"><div className="flexRow footer-links"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Terms</span></div></Link>
+                    <Link to="/services"><div className="flexRow footer-links"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Services</span></div></Link>
                     <Link to={"/contactus"}> <div className="flexRow footer-links noBorder"><i class="fa fa-chevron-right"></i><span className="footer-link-text">Contact</span></div></Link>
                 </div>
             </div>

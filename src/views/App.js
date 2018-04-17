@@ -59,7 +59,7 @@ export default class App extends React.Component {
 
     super();
     this.state = {
-      renderSplashscreen: false,
+      renderSplashscreen: true,
       backgroundColor: "",
       dropdownOpen: false,
       displayLanguageMenu: false
@@ -140,7 +140,7 @@ export default class App extends React.Component {
       let p = t.id;
       toursRouts.push(<Route exact path={p} component={TourPakagesPage} />);
       t.pakages.map((pkg)=>{
-        let p_det = t.id+":"+pkg.id;
+        let p_det = t.id+"/"+pkg.id;
         toursRouts.push(<Route exact path={p_det} component={TourDetailPage} />);
 
       });

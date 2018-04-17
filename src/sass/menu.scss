@@ -75,7 +75,15 @@
   top: calc(100% - 3px);
   margin-left: -3px;
   border-bottom: 2px solid #eaedef;
-  // background: rgba(1,1,1,0.6);
+  background: #272c32;
+}
+
+.sub_menu_container{
+  position: absolute;
+  margin-top:-27px;
+  z-index: 5;
+  margin-left: 180px;
+  background: #272c32;
 }
 
 .navigation-sub-item{
@@ -141,7 +149,7 @@
    .displayMenuSmall .show .dropdown-menu{
        display: flex;
        flex-direction:column;
-       // background: rgba(1, 1, 1, 0.6);
+       background: #272c32;
        top: 57px;
        left: -156px;
        width: 200px;
@@ -149,7 +157,7 @@
 
    .displayMenuSmall .show .dropdown-menu .dropdownMenuButton{
         background: transparent;
-        color: #fff;
+        color: #afa488;
         border: 0px;
         text-align:left;
         padding:10px;
@@ -159,13 +167,13 @@
    .dropdown .btn{
        width: 50px;
        height: 50px;
-       color:#fff;
-       // background: rgba(1, 1, 1, 0);
+       color:#afa488 !important;
+       background-color: #272c32 !important;
        outline: none !important;
    }
 
    .displayMenuSmall .show .dropdown-menu .dropdownMenuButton a{
-        color:#fff;
+        color:#afa488;
    }
 
    .displayMenuSmall .show .dropdown-menu .dropdownMenuButton a:hover{

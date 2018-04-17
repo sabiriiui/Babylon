@@ -16,7 +16,7 @@
 .groupForm form {
   display: flex;
   flex-direction: column;
-  /* color: #45556a; */
+  color: #45556a;
   width: fit-content; }
 
 .groupForm fieldset {

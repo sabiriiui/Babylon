@@ -14,7 +14,7 @@ const MenuConfig = {
           },
           {
             id: "distinction",
-            link: "distinction",
+            link: "",
             navigationItem: "Distinction",
             menu: [
               {

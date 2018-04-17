@@ -84,7 +84,7 @@
     height: 100%; }
   #bali .bannerText {
     position: absolute;
-    top: 67%;
+    top: 62%;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -116,6 +116,8 @@
   #bali .bookTourBtn {
     bottom: 0px;
     margin-top: 30px; }
+    #bali .bookTourBtn a {
+      color: #afa488; }
   #bali .bookTourBtn .btn:hover,
   #bali .bookTourBtn .btn {
     background-color: transparent;
@@ -358,7 +360,8 @@
 
 .whyChoose {
   padding: 0px 20px;
-  justify-content: space-between; }
+  justify-content: space-around;
+  width: 100%; }
 
 .contact_infor ul li label i {
   width: 34px;

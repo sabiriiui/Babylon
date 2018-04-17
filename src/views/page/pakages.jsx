@@ -15,14 +15,15 @@ export default class PakagesPage extends React.Component {
 
   seeDetails(tourId,pakageId) {
     this.props.history.push({
-      pathname: tourId+':'+pakageId,
+      pathname: tourId+'/'+pakageId,
     });
   }
 
   render() {
     let tourId = this.props.location.pathname;
     let languageLocale = getLocale(DataStore.getLocale());
-    let Tours = DataStore.getTourPakages(tourId).map((pkg,i)=>{
+    let tour = DataStore.getTourById(tourId);
+    let pakages = tour.pakages.map((pkg,i)=>{
       return  <ImageTile
                   info={pkg}
                   moreInfo={()=>this.seeDetails(tourId,pkg.id)}/>;
@@ -30,9 +31,9 @@ export default class PakagesPage extends React.Component {
 
     return (
       <div className="siteInfo">
-        <div className="headingInfo">Site Info</div>
+        <div className="headingInfo">{languageLocale[tour.locale_title]}</div>
         <span className="infoTiles">
-          {Tours}
+          {pakages}
         </span>
       </div>
     );

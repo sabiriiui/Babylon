@@ -33,7 +33,7 @@ export default class IndividualPage extends React.Component {
 
     super();
 
-    this.state = this.getState();
+    this.state = {fixedMenu: false}
   }
 
   componentDidMount() {
@@ -57,11 +57,10 @@ export default class IndividualPage extends React.Component {
     map.setOptions({ disableDefaultUI: false });
   }
 
-  getState() {
- 
-    let languageLocale = getLocale(DataStore.getLocale()); 
+  getData(){
+
+    let languageLocale = getLocale(DataStore.getLocale());
     return {
-      fixedMenu: false,
       title: languageLocale["INDIVIDUAL_TITLE"],
       stayTime: languageLocale["INDIVIDUAL_STAY_TIME"],
       categoryText: languageLocale["INIDVIDUAL_CAEGORY_TEXT"],
@@ -95,77 +94,6 @@ export default class IndividualPage extends React.Component {
     }
   }
 
-
-  renderDetails(tourType, stayAt, stayType) {
-    let pakageDetails = "";
-    if (stayAt == "hotel") {
-      if (stayType == "standard") {
-        pakageDetails = <span>
-          > 3 star hotel <br /><br /><br /><br />
-
-
-          "100$"
-
-        </span>;
-      } else if (stayType == "premium") {
-        pakageDetails = <span>
-          > 4 star hotel <br />
-          > Car<br /><br /><br /><br />
-
-          "200$"
-
-          </span>;;
-      } else if (stayType == "luxury") {
-        pakageDetails = <span>
-          > 5 star hotel <br />
-          > Car with driver <br />
-          > Swiming pool <br /><br /><br /><br />
-
-
-          "700$"
-        </span>;
-      }
-    } else if (stayAt == "villa") {
-      if (stayType == "premium") {
-        pakageDetails = <span>
-          > 5 star hotel <br />
-          > Car with driver <br />
-          > Swiming pool <br /><br /><br /><br />
-
-
-          "700$"
-        </span>;
-      } else if (stayType == "luxury") {
-        pakageDetails = <span>
-          > 5 star hotel <br />
-          > Car with driver <br />
-          > Swiming pool <br /><br /><br /><br />
-
-
-          "700$"
-        </span>;
-      }
-    }
-    if (tourType) {
-      return (
-        <div>
-          <div className="list">
-            {pakageDetails}
-          </div>
-          <div className="rate">
-          </div>
-        </div>
-      );
-    }
-  }
-
-  seeDetails(tourType, stayAt, stayType) {
-    this.props.history.push({
-      pathname: '/services',
-      state: { tourType, stayAt, stayType }
-    });
-  }
-
   render() {
 
     let languageLocale = getLocale(DataStore.getLocale());
@@ -173,30 +101,25 @@ export default class IndividualPage extends React.Component {
     let menuStyle = (this.state.fixedMenu) ? {position:"fixed",top:"0px",paddingLeft:"7%",width:"100%"} : {};
     let extraDiv = (this.state.fixedMenu) ? <div style={{height:"53px",display:"inline-block",width:"100%",marginBottom: "30px"}}></div> : "";
 
+    let pakageInfo = this.getData();
     return <div className="individual_div">
-      {/*<div className="imageConatiner">
-        <div className="bannerText">
-          <span className="discover"> {languageLocale["INDIVIDUALTOURS"]}</span>
-        </div>
-        <img src={Attraction2} width="100%" height="100%" />
-      </div>*/}
 
       <div className="main_container">
         <div className="left_container floatLeft bordered">
           <div className>
-            <h1>{this.state.title}</h1>
+            <h1>{pakageInfo.title}</h1>
           </div>
           <hr style={{ marginBottom: "30px", marginTop: "10px" }} />
           <div className="tour_carousel">
             <div className="stay_time_category_socail">
               <div className="stay_details_div">
                 <i class="fa fa-alarm-clock"></i>
-                <span>{this.state.stayTime}</span>
+                <span>{pakageInfo.stayTime}</span>
               </div>
               <div className="stay_details_div textAlignLeft">
                 <span><i class="fa fa-tag" style={{ color: "#ffb300", fontSize: "18px" }}></i></span>
                 <span>{languageLocale["CATEGORY"]}</span>
-                <span style={{ display: "block" }}>{this.state.categoryText}</span>
+                <span style={{ display: "block" }}>{pakageInfo.categoryText}</span>
               </div>
               <div className="stay_details_div textAlignRight">
 
@@ -238,46 +161,46 @@ export default class IndividualPage extends React.Component {
             <h2 className="title-list-content">{languageLocale["DESCRIPTION"]}</h2>
           </div>
           <div  className="floatLeft fullWidth" style={{ marginBottom: "30px" }}>
-            <p>{this.state.descriptionText1}</p>
-            <p>{this.state.descriptionText2}</p>
+            <p>{pakageInfo.descriptionText1}</p>
+            <p>{pakageInfo.descriptionText2}</p>
           </div>
           <table class="tours-tabs_table mb30">
             <tbody>
               <tr>
-                <td><strong>{this.state.tableh1}</strong></td>
-                <td>{this.state.tableh1d}</td>
+                <td><strong>{pakageInfo.tableh1}</strong></td>
+                <td>{pakageInfo.tableh1d}</td>
               </tr>
               <tr>
-                <td><strong>{this.state.tableh2}</strong></td>
-                <td>{this.state.tableh2d}</td>
+                <td><strong>{pakageInfo.tableh2}</strong></td>
+                <td>{pakageInfo.tableh2d}</td>
               </tr>
               <tr>
-                <td><strong>{this.state.tableh3}</strong></td>
+                <td><strong>{pakageInfo.tableh3}</strong></td>
                 <td>
                   <table>
                     <tbody>
                       <tr>
-                        <td className="noBorder"><i class="fa fa-check icon-tick icon-tick--on"></i>{this.state.tableh3d1}</td>
-                        <td className="noBorder"><i class="fa fa-check icon-tick icon-tick--on"></i>{this.state.tableh3d2}</td>
+                        <td className="noBorder"><i class="fa fa-check icon-tick icon-tick--on"></i>{pakageInfo.tableh3d1}</td>
+                        <td className="noBorder"><i class="fa fa-check icon-tick icon-tick--on"></i>{pakageInfo.tableh3d2}</td>
                       </tr>
                       <tr>
-                        <td className="noBorder"><i class="fa fa-check icon-tick icon-tick--on"></i>{this.state.tableh3d3}</td>
-                        <td className="noBorder"><i class="fa fa-check icon-tick icon-tick--on"></i>{this.state.tableh3d4}</td>
+                        <td className="noBorder"><i class="fa fa-check icon-tick icon-tick--on"></i>{pakageInfo.tableh3d3}</td>
+                        <td className="noBorder"><i class="fa fa-check icon-tick icon-tick--on"></i>{pakageInfo.tableh3d4}</td>
                       </tr>
                     </tbody>
                   </table>
                 </td>
               </tr>
               <tr>
-                <td><b>{this.state.tableh4}</b></td>
+                <td><b>{pakageInfo.tableh4}</b></td>
                 <td>
                   <table>
                     <tbody>
                       <tr>
-                        <td className="noBorder"><i class="fa fa-times icon-tick icon-tick--off"></i>{this.state.tableh4d1}</td>
+                        <td className="noBorder"><i class="fa fa-times icon-tick icon-tick--off"></i>{pakageInfo.tableh4d1}</td>
                       </tr>
                       <tr>
-                        <td className="noBorder"><i class="fa fa-times icon-tick icon-tick--off"></i>{this.state.tableh4d2}</td>
+                        <td className="noBorder"><i class="fa fa-times icon-tick icon-tick--off"></i>{pakageInfo.tableh4d2}</td>
                       </tr>
                     </tbody>
                   </table>
@@ -286,8 +209,8 @@ export default class IndividualPage extends React.Component {
             </tbody>
           </table>
           <div className="floatLeft fullWidth">
-            <p>{this.state.descriptionText3}</p>
-            <p>{this.state.descriptionText4}</p>
+            <p>{pakageInfo.descriptionText3}</p>
+            <p>{pakageInfo.descriptionText4}</p>
           </div>
           <div id="itinerary" className="fullWidth floatLeft">
             <h2 className="title-list-content">{languageLocale["ITINERARY"]}</h2>
@@ -297,13 +220,13 @@ export default class IndividualPage extends React.Component {
               <p><span class="icon-left">1</span></p>
               <div class="item_content">
                 <h2><strong>{languageLocale["DAY"]} 1: {languageLocale["DEPARTURE"]}</strong></h2>
-                <p>{this.state.day1departure1}.<br />
-                  {this.state.day1departure2}</p>
+                <p>{pakageInfo.day1departure1}.<br />
+                  {pakageInfo.day1departure2}</p>
                 <ul>
-                  <li>{this.state.day1departurep1}</li>
-                  <li>{this.state.day1departurep2}</li>
-                  <li>{this.state.day1departurep3}</li>
-                  <li>{this.state.day1departurep4}</li>
+                  <li>{pakageInfo.day1departurep1}</li>
+                  <li>{pakageInfo.day1departurep2}</li>
+                  <li>{pakageInfo.day1departurep3}</li>
+                  <li>{pakageInfo.day1departurep4}</li>
                 </ul>
               </div>
             </div>
@@ -311,28 +234,28 @@ export default class IndividualPage extends React.Component {
                 <p><span class="icon-left">2</span></p>
                 <div class="item_content">
                   <h2><strong>{languageLocale["DAY"]} 2</strong></h2>
-                  <p>{this.state.day2departure}</p>
+                  <p>{pakageInfo.day2departure}</p>
                 </div>
               </div>
               <div class="interary-item">
                 <p><span class="icon-left">3</span></p>
                 <div class="item_content">
                   <h2><strong>{languageLocale["DAY"]} 3</strong></h2>
-                  <p>{this.state.day3departure}</p>
+                  <p>{pakageInfo.day3departure}</p>
                 </div>
               </div>
               <div class="interary-item">
                 <p><span class="icon-left">4</span></p>
                 <div class="item_content">
                   <h2><strong>{languageLocale["DAY"]} 4</strong></h2>
-                  <p>{this.state.day4departure}</p>
+                  <p>{pakageInfo.day4departure}</p>
                 </div>
               </div>
               <div class="interary-item">
                 <p><span class="icon-left">5</span></p>
                 <div class="item_content">
                   <h2><strong>{languageLocale["DAY"]} 5</strong></h2>
-                  <p>{this.state.day5departure}</p></div>
+                  <p>{pakageInfo.day5departure}</p></div>
               </div>
               <div class="interary-item">
                 <p><span class="icon-left">6</span></p>
@@ -356,40 +279,6 @@ export default class IndividualPage extends React.Component {
         </div>
       </div>
 
-
-      {/* <div className="pakagesContainer">
-        <div className="ourtours">
-          <span className="heading">{languageLocale["STAYATHOTEL"]}</span>
-          <span className="tiles">
-            <PakageTile header="standard"
-              cssName="clayTile"
-              renderDetails={()=>this.renderDetails("individual","hotel","standard")}
-              handleSeeDetails={()=>this.seeDetails("individual","hotel","standard")}/>
-            <PakageTile header="premium"
-              cssName="greenTile"
-              renderDetails={()=>this.renderDetails("individual","hotel","premium")}
-              handleSeeDetails={()=>this.seeDetails("individual","hotel","premium")}/>
-            <PakageTile header="luxury"
-              cssName="pinkTile"
-              renderDetails={()=>this.renderDetails("individual","hotel","luxury")}
-              handleSeeDetails={()=>this.seeDetails("individual","hotel","luxury")}/>
-
-          </span>
-        </div>
-        <div className="attractions">
-          <span className="heading">{languageLocale["STAYATVILLA"]}</span>
-          <span className="tiles">
-            <PakageTile header="premium"
-              cssName="greenTile"
-              renderDetails={()=>this.renderDetails("individual","villa","premium")}
-              handleSeeDetails={()=>this.seeDetails("individual","villa","premium")}/>
-            <PakageTile header="luxury"
-              cssName="pinkTile"
-              renderDetails={()=>this.renderDetails("individual","villa","luxury")}
-              handleSeeDetails={()=>this.seeDetails("individual","villa","luxury")}/>
-          </span>
-        </div>
-      </div> */}
     </div>
 
   }
