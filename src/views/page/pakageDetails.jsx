@@ -127,7 +127,7 @@ export default class TourDetailPage extends React.Component {
       tableh3d3: languageLocale["INDIVIDUAL_TABLE_H3D3"],
       tableh3d4: languageLocale["INDIVIDUAL_TABLE_H3D4"],
       tableh4d1: languageLocale["INDIVIDUAL_TABLE_H4D1"],
-      tableh4d2: languageLocale["INDIVIDUAL_TABLE_H4D2"]
+      tableh4d2: languageLocale["INDIVIDUAL_TABLE_H4D2"],
 
     }
   }
@@ -154,6 +154,13 @@ export default class TourDetailPage extends React.Component {
     }
     let pakage = DataStore.getTourPakageById(tourId,pakageId);
     let pakageInfo = this.getData(pakage);
+    let carouselImgs = pakage.images.map(imgSrc=>{
+      return (
+        <div>
+          <img src={process.env.PUBLIC_URL + '/images/'+imgSrc} />
+        </div>
+      );
+    })
     return <div className="individual_div">
 
       <div className="main_container">
@@ -188,19 +195,7 @@ export default class TourDetailPage extends React.Component {
           </div>
           <div className="bordered fullWidth floatLeft" style={{ marginTop: "30px" }}>
             <Carousel showThumbs={true} showArrows={true}
-            >
-              <div>
-                <img src={require('../../images/main.jpg')} />
-              </div>
-              <div>
-                <img src={Attraction1} />
-              </div>
-              <div>
-                <img src={Attraction2} />
-              </div>
-              <div>
-                <img src={Attraction3} />
-              </div>
+            >{carouselImgs}
             </Carousel>
           </div>
 

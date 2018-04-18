@@ -11,11 +11,10 @@ export default class ImageInfoTile extends React.Component{
         let {info,moreInfo} = this.props;
 
         // `${filePath}`
-        var imageSrc = info.src;
         return <div className="tile_infoContainer">
             <div className="image_tileContainer" onClick={moreInfo.bind(this)}>
                 <div className="image">
-                  <img width="100%" height="100%" src={require("../../images/main.jpg")} />
+                  <img width="100%" height="100%" src={process.env.PUBLIC_URL + '/images/'+info.src} />
                 </div>
             </div>
             <div className="infoDetailContainer">
@@ -24,7 +23,7 @@ export default class ImageInfoTile extends React.Component{
               <div className="infoTilePriceLabel">Price</div>
 
             </div>
-            <div className="infoTilePrice">$2700</div>
+            <div className="infoTilePrice">{info.price}</div>
             <div className="infoTileBody">{info.locale_Description}</div>
             <div className="lineSeparator"></div>
             <div className="infoDetails">
