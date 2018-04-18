@@ -6,11 +6,6 @@ import { DataStore } from '../../stores/DataStore';
 import { getLocale } from '../../Utils/commonUtilities.react';
 
 import { Gmaps, Marker, InfoWindow, Circle } from 'react-gmaps';
-
-import Attraction1 from '../../images/attractions/attraction10.jpg';
-import Attraction2 from '../../images/attractions/attraction13.jpg';
-import Attraction3 from '../../images/attractions/attraction14.jpg';
-
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 var Carousel = require('react-responsive-carousel').Carousel;

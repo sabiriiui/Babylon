@@ -9,8 +9,6 @@ export default class ImageInfoTile extends React.Component{
 
     render(){
         let {info,moreInfo} = this.props;
-
-        // `${filePath}`
         return <div className="tile_infoContainer">
             <div className="image_tileContainer" onClick={moreInfo.bind(this)}>
                 <div className="image">
