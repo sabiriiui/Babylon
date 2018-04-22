@@ -144,7 +144,7 @@ export default class TourDetailPage extends React.Component {
               </div>
               <div className="stay_details_div textAlignLeft">
                 <span><i class="fa fa-tag" style={{ color: "#ffb300", fontSize: "18px" }}></i></span>
-                <span>{languageLocale["CATEGORY"]}</span>
+                <span style={{marginRight:"7px"}}>{languageLocale["CATEGORY"]}</span>
                 <span style={{ display: "block" }}>{pakageInfo.categoryText}</span>
               </div>
               <div className="stay_details_div textAlignRight">
