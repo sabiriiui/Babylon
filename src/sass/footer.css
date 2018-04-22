@@ -53,17 +53,17 @@
 
 .footer-copyright-div {
   width: 100%;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   clear: both;
   border-top: 1px solid #fff;
   background: #414b4f;
   color: #fff;
   height: 50px;
+  width: 100%;
   padding: 15px 80px; }
 
 .footer-copyright-div .footer_icons {
-  width: 50%;
-  float: right;
   text-align: right; }
 
 .footer-copyright-div .contactus {

@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ServicesImage from '../../images/services.jpg';
 import 'react-day-picker/lib/style.css';
 import {
   Button,
@@ -10,17 +9,8 @@ import {
   Input,
   FormText
 } from 'reactstrap';
+import OffersPage from "./offers";
 
-import Hotel1 from '../../images/hotel/hotel1.jpg';
-import Hotel2 from '../../images/hotel/hotel2.jpg';
-import Hotel3 from '../../images/hotel/hotel3.jpg';
-import Hotel4 from '../../images/hotel/hotel4.jpg';
-import Hotel5 from '../../images/hotel/hotel5.jpg';
-
-import Car1 from '../../images/car/car1.png';
-import Car2 from '../../images/car/car2.png';
-import Car3 from '../../images/car/car3.png';
-import Car4 from '../../images/car/car4.png';
 
 import {DataStore} from '../../stores/DataStore';
 import {getLocale} from '../../Utils/commonUtilities.react';
@@ -74,16 +64,22 @@ export default class ServicesPage extends React.Component {
     let sent = (this.state.emailSent)?<span className="sentemail">{languageLocale["MAILSENTMESSAGE"]}</span>:"";
 
     return <div className="service_div">
+
       <div className="imageConatiner">
         <div className="bannerText">
-          <span className="discover">
-            {/*{languageLocale["SERVICES"]}*/}
+          <span style={{display:"flex"}}>
+            <div className="flexColumn">
+              <span className="babylon"> {languageLocale["SERVICESLABEL"]} </span>
+
+            </div>
           </span>
+
         </div>
-        <img src={ServicesImage} width="100%" height="100%"/>
+        <img src={process.env.PUBLIC_URL + '/images/attractions/attraction13.jpg'} width="100%" height="100%"/>
       </div>
-      <div className="services_body">
-        <div className="container">
+
+      <div className="services_body main_container">
+        <div className="container"  style={{display:"none"}}>
           <div className="heading_underline">{languageLocale["HIGHLIGHTS"]}
           </div>
           <div className="highlightsDiv flexColumn children_marginD10">
@@ -106,61 +102,7 @@ export default class ServicesPage extends React.Component {
 
           </div>
         </div>
-
-        <div className="container">
-          <div className="heading_underline">{languageLocale["HOTEL"]}
-          </div>
-          <div className="hotelCauroselDiv">
-            <Carousel showStatus={false} showThumbs={false} autoPlay={true} infiniteLoop={true} stopOnHover={false}>
-              <div>
-                <img src={Hotel1}/>
-              </div>
-              <div>
-                <img src={Hotel2}/>
-              </div>
-              <div>
-                <img src={Hotel3}/>
-              </div>
-              <div>
-                <img src={Hotel4}/>
-              </div>
-              <div>
-                <img src={Hotel5}/>
-              </div>
-            </Carousel>
-          </div>
-        </div>
-        <div className="container">
-          <div className="heading_underline">{languageLocale["TRANSPORT"]}
-          </div>
-
-          <div className="transportCauroselDiv">
-            <Carousel
-              style={{width:"40%"}}
-              showStatus={false}
-              showThumbs={false}
-              autoPlay={true}
-              infiniteLoop={true}
-              stopOnHover={false}>
-              <div>
-                <img src={Car1}/>
-                <img src={Car2}/>
-              </div>
-              <div>
-                <img src={Car2}/>
-              </div>
-              <div>
-                <img src={Car3}/>
-              </div>
-              <div>
-                <img src={Car4}/>
-              </div>
-            </Carousel>
-          </div>
-
-        </div>
-
-        <div className="container">
+        <div className="container" style={{display:"none"}}>
           <div className="heading_underline">itinerary
           </div>
 
@@ -214,30 +156,88 @@ export default class ServicesPage extends React.Component {
             </div>
           </div>
         </div>
-        <div className="container">
-          <div className="heading_underline">book your tour now
-          </div>
-          <div className="formContainer" id="servicesForm">
-            <Form onSubmit={this.onSubmit.bind(this)} action="http://babylonholidays.com/cgi-bin/bluemail" enctype="multipart/form-data" method="POST">
-              <FormGroup tag="fieldset">
-                <FormGroup>
-                  <Label for="nameField">{languageLocale["FORMNAME"]}</Label>
-                  <Input type="text" name="name" id="nameField" placeholder="" required="required"/>
-                </FormGroup>
-                <FormGroup>
-                  <Label for="phoneField">{languageLocale["PHONENUMBER"]}</Label>
-                  <ReactPhoneInput ref={(ph)=>this.phone = ph} />
-                </FormGroup>
-                <FormGroup>
-                  <Label for="emailField">{languageLocale["FORMEMAIL"]}</Label>
-                  <Input type="email" name="email" id="emailField" placeholder="" required="required"/>
-                </FormGroup>
-              </FormGroup>
-              {sent}
-              <input type="Submit" className="btn btn-lg product-button" value={languageLocale["BOOKNOW"]}></input>
 
-            </Form>
+        <div className="container offers_container">
+        <OffersPage/>
+          <div className="container">
+            <div className="heading_underline">{languageLocale["HOTEL"]}
+            </div>
+            <div className="hotelCauroselDiv">
+              <Carousel showStatus={false} showThumbs={false} autoPlay={true} infiniteLoop={true} stopOnHover={false}>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/images/hotel/hotel1.jpg'}/>
+                </div>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/images/hotel/hotel2.jpg'}/>
+                </div>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/images/hotel/hotel3.jpg'}/>
+                </div>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/images/hotel/hotel4.jpg'}/>
+                </div>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/images/hotel/hotel5.jpg'}/>
+                </div>
+              </Carousel>
+            </div>
           </div>
+          <div className="container" style={{display:"none"}}>
+            <div className="heading_underline">{languageLocale["TRANSPORT"]}
+            </div>
+
+            <div className="transportCauroselDiv">
+              <Carousel
+                style={{width:"40%"}}
+                showStatus={false}
+                showThumbs={false}
+                autoPlay={true}
+                infiniteLoop={true}
+                stopOnHover={false}>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/images/car/car1.png'}/>
+                </div>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/images/car/car2.png'}/>
+                </div>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/images/car/car3.png'}/>
+                </div>
+                <div>
+                  <img src={process.env.PUBLIC_URL + '/images/car/car4.png'}/>
+                </div>
+              </Carousel>
+            </div>
+
+          </div>
+
+
+        <div className="container">
+              <div className="heading_underline">book your tour now
+              </div>
+              <div className="formContainer" id="servicesForm">
+                <Form onSubmit={this.onSubmit.bind(this)} action="http://babylonholidays.com/cgi-bin/bluemail" enctype="multipart/form-data" method="POST">
+                  <FormGroup tag="fieldset">
+                    <FormGroup>
+                      <Label for="nameField">{languageLocale["FORMNAME"]}</Label>
+                      <Input type="text" name="name" id="nameField" placeholder="" required="required"/>
+                    </FormGroup>
+                    <FormGroup>
+                      <Label for="phoneField">{languageLocale["PHONENUMBER"]}</Label>
+                      <ReactPhoneInput ref={(ph)=>this.phone = ph} />
+                    </FormGroup>
+                    <FormGroup>
+                      <Label for="emailField">{languageLocale["FORMEMAIL"]}</Label>
+                      <Input type="email" name="email" id="emailField" placeholder="" required="required"/>
+                    </FormGroup>
+                  </FormGroup>
+                  {sent}
+                  <input type="Submit" className="btn btn-lg product-button" value={languageLocale["BOOKNOW"]}></input>
+
+                </Form>
+              </div>
+            </div>
+
         </div>
       </div>
     </div>

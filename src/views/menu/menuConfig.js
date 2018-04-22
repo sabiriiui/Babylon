@@ -74,19 +74,19 @@ const MenuConfig = {
             navigationItem: "Tours",
             menu: [
               {
-                name: "Individual",
+                name: "IndividualTour",
                 link: "individual",
                 shortDescription: "",
                 iconClass: ""
               },
               {
-                name: "Honeymoon",
+                name: "HoneymoonTour",
                 link: "honeymoon",
                 shortDescription: "",
                 iconClass: ""
               },
               {
-                name: "Group",
+                name: "GroupTour",
                 link: "group",
                 shortDescription: "",
                 iconClass: ""

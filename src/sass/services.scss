@@ -30,8 +30,13 @@
   }
   .services_body .container{
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-align: center;
     align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 30px;
   }
   .heading_underline{
     text-transform: uppercase;

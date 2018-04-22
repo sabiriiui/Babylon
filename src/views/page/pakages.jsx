@@ -28,6 +28,7 @@ export default class PakagesPage extends React.Component {
     return (
       <div className="siteInfo">
         <div className="headingInfo">{languageLocale[tour.locale_title]}</div>
+        <div className="tourDetail">{languageLocale[tour.details]}</div>
         <span className="infoTiles">
           {pakages}
         </span>

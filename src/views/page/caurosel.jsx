@@ -1,9 +1,4 @@
 import React, { Component } from 'react';
-
-import Main from '../../images/main.jpg';
-import Attraction1 from '../../images/attractions/attraction2.jpg';
-import Attraction2 from '../../images/attractions/attraction13.jpg';
-import Attraction3 from '../../images/attractions/attraction14.jpg';
 var Carousel = require('react-responsive-carousel').Carousel;
 
 class BaliCarousel extends Component {
@@ -27,7 +22,7 @@ class BaliCarousel extends Component {
     // </Carousel>
 
     return <div style={{height:"100vh"}}>
-            <img src={Main} width="100%" height="100%"/>
+            <img src={process.env.PUBLIC_URL + '/images/main.jpg'}  width="100%" height="100%"/>
         </div>;
       }
 

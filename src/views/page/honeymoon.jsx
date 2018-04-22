@@ -1,15 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import PakageTile from "../tile/pakageTile";
-import Honeymoon from '../../images/honeymoon.jpg';
 import { DataStore } from '../../stores/DataStore';
 import { getLocale } from '../../Utils/commonUtilities.react';
 
 import { Gmaps, Marker, InfoWindow, Circle } from 'react-gmaps';
 
-import Attraction1 from '../../images/attractions/attraction10.jpg';
-import Attraction2 from '../../images/attractions/attraction13.jpg';
-import Attraction3 from '../../images/attractions/attraction14.jpg';
 
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -213,18 +209,18 @@ export default class HoneymoonPage extends React.Component {
           <div className="bordered fullWidth floatLeft" style={{ marginTop: "30px" }}>
             <Carousel showThumbs={true} showArrows={true}
             >
-              <div>
-                <img src={require('../../images/main.jpg')} />
-              </div>
-              <div>
-                <img src={Attraction1} />
-              </div>
-              <div>
-                <img src={Attraction2} />
-              </div>
-              <div>
-                <img src={Attraction3} />
-              </div>
+            <div>
+              <img src={process.env.PUBLIC_URL + '/images/main.jpg'} />
+            </div>
+            <div>
+              <img src={process.env.PUBLIC_URL + '/images/attractions/attraction10.jpg'} />
+            </div>
+            <div>
+              <img src={process.env.PUBLIC_URL + '/images/attractions/attraction13.jpg'} />
+            </div>
+            <div>
+              <img src={process.env.PUBLIC_URL + '/images/attractions/attraction14.jpg'} />
+            </div>
             </Carousel>
           </div>
 

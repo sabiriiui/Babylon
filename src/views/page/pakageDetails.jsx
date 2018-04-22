@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import PakageTile from "../tile/pakageTile";
-import Individual from '../../images/individual.jpg';
 import { DataStore } from '../../stores/DataStore';
 import { getLocale } from '../../Utils/commonUtilities.react';
 
@@ -53,76 +52,34 @@ export default class TourDetailPage extends React.Component {
     map.setOptions({ disableDefaultUI: false });
   }
 
-  // getData(pakage){
-  //
-  //   let languageLocale = getLocale(DataStore.getLocale());
-  //   return {
-  //     title: languageLocale[pakage.locale_title],
-  //     stayTime: languageLocale[pakage.locale_stay],
-  //     categoryText: languageLocale[pakage.locale_caegory_TEXT],
-  //     descriptionText1: languageLocale[pakage.locale_description_text_1],
-  //     descriptionText2: languageLocale[pakage.locale_description_text_2],
-  //     descriptionText3: languageLocale[pakage.locale_description_text_3],
-  //     descriptionText4: languageLocale[pakage.locale_description_text_4],
-  //     day1departure1: languageLocale[pakage.locale_day_1_dep_1],
-  //     day1departure2: languageLocale[pakage.locale_day_1_dep_2],
-  //     day1departurep1:languageLocale[pakage.locale_day_1_dep_P1],
-  //     day1departurep2:languageLocale[pakage.locale_day_1_dep_P2],
-  //     day1departurep3:languageLocale[pakage.locale_day_1_dep_P3],
-  //     day1departurep4:languageLocale[pakage.locale_day_1_dep_P4],
-  //     day2departure:  languageLocale[pakage.locale_day_2_dep_1],
-  //     day3departure:  languageLocale[pakage.locale_day_3_dep_1],
-  //     day4departure:  languageLocale[pakage.locale_day_4_dep_1],
-  //     day5departure:  languageLocale[pakage.locale_day_5_dep_1],
-  //     tableh1: languageLocale[pakage.locale_table_H1],
-  //     tableh2: languageLocale[pakage.locale_table_H2],
-  //     tableh3: languageLocale[pakage.locale_table_H3],
-  //     tableh4: languageLocale[pakage.locale_table_H4],
-  //     tableh1d:  languageLocale[pakage.locale_table_H1D],
-  //     tableh2d:  languageLocale[pakage.locale_table_H2D],
-  //     tableh3d1: languageLocale[pakage.locale_table_H3D1],
-  //     tableh3d2: languageLocale[pakage.locale_table_H3D2],
-  //     tableh3d3: languageLocale[pakage.locale_table_H3D3],
-  //     tableh3d4: languageLocale[pakage.locale_table_H3D4],
-  //     tableh4d1: languageLocale[pakage.locale_table_H4D1],
-  //     tableh4d2: languageLocale[pakage.locale_table_H4D2]
-  //
-  //   }
-  // }
-
-  getData(){
+  getData(pakage){
 
     let languageLocale = getLocale(DataStore.getLocale());
     return {
-      title: languageLocale["INDIVIDUAL_TITLE"],
-      stayTime: languageLocale["INDIVIDUAL_STAY_TIME"],
-      categoryText: languageLocale["INIDVIDUAL_CAEGORY_TEXT"],
-      descriptionText1: languageLocale["INIDIVIDUAL_DESCRIPTION_TEXT_1"],
-      descriptionText2: languageLocale["INIDIVIDUAL_DESCRIPTION_TEXT_2"],
-      descriptionText3: languageLocale["INIDIVIDUAL_DESCRIPTION_TEXT_3"],
-      descriptionText4: languageLocale["INIDIVIDUAL_DESCRIPTION_TEXT_4"],
-      day1departure1: languageLocale["INDIVIDUAL_DAY_1_DEP_1"],
-      day1departure2: languageLocale["INDIVIDUAL_DAY_1_DEP_2"],
-      day1departurep1:languageLocale["INDIVIDUAL_DAY_1_DEP_P1"],
-      day1departurep2:languageLocale["INDIVIDUAL_DAY_1_DEP_P2"],
-      day1departurep3:languageLocale["INDIVIDUAL_DAY_1_DEP_P3"],
-      day1departurep4:languageLocale["INDIVIDUAL_DAY_1_DEP_P4"],
-      day2departure:  languageLocale["INDIVIDUAL_DAY_2_DEP_1"],
-      day3departure:  languageLocale["INDIVIDUAL_DAY_3_DEP_1"],
-      day4departure:  languageLocale["INDIVIDUAL_DAY_4_DEP_1"],
-      day5departure:  languageLocale["INDIVIDUAL_DAY_5_DEP_1"],
-      tableh1: languageLocale["INDIVIDUAL_TABLE_H1"],
-      tableh2: languageLocale["INDIVIDUAL_TABLE_H2"],
-      tableh3: languageLocale["INDIVIDUAL_TABLE_H3"],
-      tableh4: languageLocale["INDIVIDUAL_TABLE_H4"],
-      tableh1d:  languageLocale["INDIVIDUAL_TABLE_H1D"],
-      tableh2d:  languageLocale["INDIVIDUAL_TABLE_H2D"],
-      tableh3d1: languageLocale["INDIVIDUAL_TABLE_H3D1"],
-      tableh3d2: languageLocale["INDIVIDUAL_TABLE_H3D2"],
-      tableh3d3: languageLocale["INDIVIDUAL_TABLE_H3D3"],
-      tableh3d4: languageLocale["INDIVIDUAL_TABLE_H3D4"],
-      tableh4d1: languageLocale["INDIVIDUAL_TABLE_H4D1"],
-      tableh4d2: languageLocale["INDIVIDUAL_TABLE_H4D2"],
+      title: languageLocale[pakage.locale_title],
+      stayTime: languageLocale[pakage.locale_stay],
+      categoryText: languageLocale[pakage.locale_caegory_text],
+      descriptionText1: languageLocale[pakage.locale_description_text_1],
+      descriptionText2: languageLocale[pakage.locale_description_text_2],
+      descriptionText3: languageLocale[pakage.locale_description_text_3],
+      descriptionText4: languageLocale[pakage.locale_description_text_4],
+      day1: languageLocale[pakage.locale_day_1_dep_1],
+      day2:  languageLocale[pakage.locale_day_2_dep_1],
+      day3:  languageLocale[pakage.locale_day_3_dep_1],
+      day4:  languageLocale[pakage.locale_day_4_dep_1],
+      day5:  languageLocale[pakage.locale_day_5_dep_1],
+      tableh1: languageLocale[pakage.locale_table_H1],
+      tableh2: languageLocale[pakage.locale_table_H2],
+      tableh3: languageLocale[pakage.locale_table_H3],
+      tableh4: languageLocale[pakage.locale_table_H4],
+      tableh1d:  languageLocale[pakage.locale_table_H1D],
+      tableh2d:  languageLocale[pakage.locale_table_H2D],
+      tableh3d1: languageLocale[pakage.locale_table_H3D1],
+      tableh3d2: languageLocale[pakage.locale_table_H3D2],
+      tableh3d3: languageLocale[pakage.locale_table_H3D3],
+      tableh3d4: languageLocale[pakage.locale_table_H3D4],
+      tableh4d1: languageLocale[pakage.locale_table_H4D1],
+      tableh4d2: languageLocale[pakage.locale_table_H4D2]
 
     }
   }
@@ -155,7 +112,21 @@ export default class TourDetailPage extends React.Component {
           <img src={process.env.PUBLIC_URL + '/images/'+imgSrc} />
         </div>
       );
-    })
+    });
+
+
+    let daysSchedual = [];
+    for(let i=1;i<=pakage.days;i++){
+      daysSchedual.push(
+        <div class="interary-item">
+          <p><span class="icon-left">{i}</span></p>
+          <div class="item_content">
+            <h2><strong>{languageLocale["DAY"]} {i}: {languageLocale["DEPARTURE"]}</strong></h2>
+            <p>{pakageInfo["day"+i]}</p>
+          </div>
+        </div>
+      );
+    }
     return <div className="individual_div">
 
       <div className="main_container">
@@ -259,46 +230,41 @@ export default class TourDetailPage extends React.Component {
             <h2 className="title-list-content">{languageLocale["ITINERARY"]}</h2>
           </div>
           <div className="fullWidth floatLeft mb30">
-            <div content="content-inner"><div class="interary-item">
-              <p><span class="icon-left">1</span></p>
-              <div class="item_content">
-                <h2><strong>{languageLocale["DAY"]} 1: {languageLocale["DEPARTURE"]}</strong></h2>
-                <p>{pakageInfo.day1departure1}.<br />
-                  {pakageInfo.day1departure2}</p>
-                <ul>
-                  <li>{pakageInfo.day1departurep1}</li>
-                  <li>{pakageInfo.day1departurep2}</li>
-                  <li>{pakageInfo.day1departurep3}</li>
-                  <li>{pakageInfo.day1departurep4}</li>
-                </ul>
+            <div content="content-inner">
+              {daysSchedual}
+            {/*  <div class="interary-item">
+                <p><span class="icon-left">1</span></p>
+                <div class="item_content">
+                  <h2><strong>{languageLocale["DAY"]} 1: {languageLocale["DEPARTURE"]}</strong></h2>
+                  <p>{pakageInfo.day1}</p>
+                </div>
               </div>
-            </div>
               <div class="interary-item">
                 <p><span class="icon-left">2</span></p>
                 <div class="item_content">
                   <h2><strong>{languageLocale["DAY"]} 2</strong></h2>
-                  <p>{pakageInfo.day2departure}</p>
+                  <p>{pakageInfo.day2}</p>
                 </div>
               </div>
               <div class="interary-item">
                 <p><span class="icon-left">3</span></p>
                 <div class="item_content">
                   <h2><strong>{languageLocale["DAY"]} 3</strong></h2>
-                  <p>{pakageInfo.day3departure}</p>
+                  <p>{pakageInfo.day3}</p>
                 </div>
               </div>
               <div class="interary-item">
                 <p><span class="icon-left">4</span></p>
                 <div class="item_content">
                   <h2><strong>{languageLocale["DAY"]} 4</strong></h2>
-                  <p>{pakageInfo.day4departure}</p>
+                  <p>{pakageInfo.day4}</p>
                 </div>
               </div>
               <div class="interary-item">
                 <p><span class="icon-left">5</span></p>
                 <div class="item_content">
                   <h2><strong>{languageLocale["DAY"]} 5</strong></h2>
-                  <p>{pakageInfo.day5departure}</p></div>
+                  <p>{pakageInfo.day5}</p></div>
               </div>
               <div class="interary-item">
                 <p><span class="icon-left">6</span></p>
@@ -306,6 +272,8 @@ export default class TourDetailPage extends React.Component {
                   <h2><strong>{languageLocale["DAY"]} 6: {languageLocale["RETURN"]}</strong></h2>
                 </div>
               </div>
+              */}
+
             </div>
           </div>
           <div id="location" className="fullWidth floatLeft">

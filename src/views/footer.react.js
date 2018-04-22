@@ -57,12 +57,15 @@ export default class Footer extends React.Component {
 
         </div>
             <div className="footer-copyright-div">
+              <div className="createdCSS"> Powered Créer le désir </div>
+              <div className="copyright1"> Copyright © 2018 Babylon holidays, All rights reserved</div>
                 <div className="footer_icons">
                     <a href="https://www.facebook.com/babylonholidays/"><span className="floatLeft fa fa-facebook"></span></a>
                     <a href="https://twitter.com/Babylonholidays"><span className=" floatLeft fa fa-twitter"></span></a>
                     <a href="https://www.instagram.com/babylonholidays"><span className="floatLeft fa fa-instagram"></span></a>
                 </div>
-                <div className="copyright"> Copyright © 2013-2018 Babylon holidays, All rights reserved</div>
+
+
             </div>
         </div >);
 

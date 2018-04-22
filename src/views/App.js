@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import MenuItem from './menu/menuitem';
 import MenuBar from './menu/menubar';
-import Logo from '../images/logo.png';
 
 import HomePage from "./page/home.jsx";
 import IndividualPage from "./page/individual.jsx";
@@ -122,7 +121,8 @@ export default class App extends React.Component {
     if (this.state.renderSplashscreen)
       return <div className="colorChangeAnimation" style={this.getStyle()}>
         <span className="splashlogo">
-          <img className="logoImg" src={Logo} width="300px" />
+          <img className="logoImg" src={process.env.PUBLIC_URL + '/images/newlogo.png'} width="300px" />
+
         </span>
       </div>
     else
@@ -134,7 +134,7 @@ export default class App extends React.Component {
             <div className="container-fluid navigation-container">
               <Link to="/">
                 <span className="logo">
-                  <img className="logoImg" src={Logo} width="180px" height="90px" />
+                  <img className="logoImg" src={process.env.PUBLIC_URL + '/images/newlogo.png'} width="180px" height="90px" />
                   {/*<span className="appNameSpan">{languageLocale['BABYLONHOLIDAYS']}</span>*/}
                 </span>
               </Link>
@@ -157,14 +157,14 @@ export default class App extends React.Component {
                 </Dropdown>
 
               </span>
-              <span className="floatRight flexRow" style={{ color: "#fff", fontSize: "10pt", fontWeight: "500" }}>
+              <span className="floatRight flexRow" style={{ color: "#fff", fontSize: "10pt", fontWeight: "500",visibility:"hidden" }}>
                 <span onClick={this.onLanguageMenuClicked.bind(this)}  className="floatLeft language-display-div" ref="languageMenu">
                   {languageLocale['LANGUAGE']}
                   <i style={{marginLeft:"5px",marginRight:"5px"}} class="fa fa-caret-down"></i>
                 </span>
               </span>
 
-              {(this.state.displayLanguageMenu) ? <span style={{left:this.refs.languageMenu.offsetLeft+'px'}} className="language-dropdown">
+              {(this.state.displayLanguageMenu) ? <span style={{left:this.refs.languageMenu.offsetLeft+'px',visibility:"hidden"}} className="language-dropdown">
                 <span className="language-menu-item" style={{ paddingTop: "5px" }} onClick={this.changeLanguage.bind(this, "English")}> English </span>
                 <span className="language-menu-item" style={{ paddingBottom: "5px" }} onClick={this.changeLanguage.bind(this, "Arabic")}> عربى </span>
               </span> : ""

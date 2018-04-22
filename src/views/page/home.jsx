@@ -1,36 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ImageTile from "../tile/imageTile";
-import Main from '../../images/main.jpg';
-import Single from '../../images/single.jpg';
-import Honeymoon from '../../images/honeymoon.jpg';
-import Group from '../../images/group.jpg';
 import Carousel from "./caurosel";
 import { DataStore } from '../../stores/DataStore';
 import {getLocale} from '../../Utils/commonUtilities.react';
 import { Link } from "react-router-dom";
-
-import WHYUS1 from '../../images/chooseus1.png';
-import WHYUS2 from '../../images/chooseus2.png';
-import WHYUS3 from '../../images/chooseus3.png';
-import Attraction1 from '../../images/attractions/attraction16.jpg';
-import Attraction2 from '../../images/attractions/attraction2.jpg';
-import Attraction3 from '../../images/attractions/attraction3.jpg';
-import Attraction4 from '../../images/attractions/attraction5.jpg';
-import Attraction5 from '../../images/attractions/attraction4.jpg';
-import Attraction6 from '../../images/attractions/attraction6.jpg';
-import Attraction7 from '../../images/attractions/attraction7.jpg';
-import Attraction8 from '../../images/attractions/attraction8.jpg';
-import Attraction9 from '../../images/attractions/attraction9.jpg';
-
-import Attraction10 from '../../images/attractions/attraction10.jpg';
-import Attraction11 from '../../images/attractions/attraction11.jpg';
-import Attraction12 from '../../images/attractions/attraction12.jpg';
-
-import Attraction13 from '../../images/attractions/attraction13.jpg';
-import Attraction14 from '../../images/attractions/attraction14.jpg';
-import Attraction15 from '../../images/attractions/attraction15.jpg';
-import Attraction16 from '../../images/attractions/attraction1.jpg';
 
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -72,7 +46,7 @@ export default class HomePage extends React.Component {
   getDestinations(){
     let dests = ["Gilis","Lombok","Bali","Jakarta","Puncak"];
     return dests.map((dest,index)=>{
-      let sc = require("../../images/attractions/attraction"+(index+1)+".jpg");
+      let sc = process.env.PUBLIC_URL + "/images/attractions/small/attraction"+(index+1)+".jpg";
       return <Link className="dest_img_cont" to = {"/"+dest.toLowerCase()}>
         <span className="destName">{dest}</span>
         <img width="220px" height="220px" src={sc}/>
@@ -117,7 +91,7 @@ export default class HomePage extends React.Component {
 
         <div className="destinationContainer">
           <span className="heading">{languageLocale["DESTINATIONS"]}</span>
-
+          <span className="destinationsDetail">{languageLocale["DESTINATIONSDETAIL"]}</span>
           <div className="imgSliderCon">
             <div className="goLeft" onClick={this.goLeft.bind(this)}>{'<'}</div>
             <div className="circleImgs" >
@@ -133,39 +107,37 @@ export default class HomePage extends React.Component {
         <div className="ourtours">
           <span className="heading">{languageLocale["OURTOUR"]}</span>
           <span className="tiles">
-            <ImageTile src={Single} info={languageLocale["INDIVIDUAL"]} link="individual"/>
-            <ImageTile src={Honeymoon} info={languageLocale["HONEYMOON"]} link="honeymoon"/>
-            <ImageTile src={Group} info={languageLocale["GROUP"]} link="group"/>
+            <ImageTile src={process.env.PUBLIC_URL + '/images/single.jpg'} info={languageLocale["INDIVIDUAL"]} link="individual"/>
+            <ImageTile src={process.env.PUBLIC_URL + '/images/honeymoon.jpg'} info={languageLocale["HONEYMOON"]} link="honeymoon"/>
+            <ImageTile src={process.env.PUBLIC_URL + '/images/group.jpg'} info={languageLocale["GROUP"]} link="group"/>
           </span>
         </div>
 
         <div className="whyChooseContainer">
             <span className="heading">{languageLocale["WHYCHOOSEUS"]}</span>
-            <div className="whyChoose flexRow">
+            <span className="destinationsDetail">{languageLocale["WHYCHOOSEUSDETAIL"]}</span>
+          <div className="whyChoose">
               <div className="chooseUsItem flexColumn">
-                <img width="200px" height="200px" src={WHYUS1}></img>
+                <img width="200px" height="200px" src={process.env.PUBLIC_URL + '/images/chooseus1.png'}></img>
                 <h3>{languageLocale["HANDPICKHOTEL"]}</h3>
-                <div style={{textAlign:"center"}}>Lorem ipsum dolor sit amet,<br/>
-                   consectetur adipisicing elit,<br/>
-                    sed do eiusmod.
+                <div className="whyChooseDetail">
+                  {languageLocale["HANDPICKHOTELDETAIL"]}
                 </div>
               </div>
 
               <div className="chooseUsItem flexColumn">
-                <img width="200px" height="200px" src={WHYUS2}></img>
+                <img width="200px" height="200px" src={process.env.PUBLIC_URL + '/images/chooseus2.png'}></img>
                 <h3>{languageLocale["WORLDCLASSSERVICE"]}</h3>
-                <div style={{textAlign:"center"}}>Lorem ipsum dolor sit amet,<br/>
-                   consectetur adipisicing elit,<br/>
-                    sed do eiusmod.
+                <div className="whyChooseDetail">
+                  {languageLocale["WORLDCLASSSERVICEDETAIL"]}
                 </div>
               </div>
 
               <div className="chooseUsItem flexColumn">
-                <img width="200px" height="200px" src={WHYUS3}></img>
+                <img width="200px" height="200px" src={process.env.PUBLIC_URL + '/images/chooseus3.png'}></img>
                 <h3>{languageLocale["BESTPRICEGURANTEE"]}</h3>
-                <div style={{textAlign:"center"}}>Lorem ipsum dolor sit amet,<br/>
-                   consectetur adipisicing elit,<br/>
-                    sed do eiusmod.
+                <div className="whyChooseDetail">
+                  {languageLocale["BESTPRICEGURANTEEDETAIL"]}
                 </div>
               </div>
             </div>
@@ -175,31 +147,34 @@ export default class HomePage extends React.Component {
         <div className="attractions">
           <span className="heading">{languageLocale["ATTRACTIONSINBALI"]}</span>
 
+          <div className="destinationsDetail">
+            {languageLocale["DISCOVERBEAUTIDETAIL"]}
+          </div>
           <span className="tiles">
-            <ImageTile src={Attraction12} />
-            <ImageTile src={Attraction13} />
-              <ImageTile src={Attraction9} />
+            <ImageTile src={process.env.PUBLIC_URL + '/images/attractions/small/attraction12.jpg'} />
+            <ImageTile src={process.env.PUBLIC_URL + '/images/attractions/small/attraction13.jpg'} />
+              <ImageTile src={process.env.PUBLIC_URL + '/images/attractions/small/attraction9.jpg'} />
           </span>
           <span className="tiles">
-            <ImageTile src={Attraction4} />
-            <ImageTile src={Attraction7} />
-            <ImageTile src={Attraction16} />
+            <ImageTile src={process.env.PUBLIC_URL + '/images/attractions/small/attraction6.jpg'} />
+            <ImageTile src={process.env.PUBLIC_URL + '/images/attractions/small/attraction7.jpg'} />
+            <ImageTile src={process.env.PUBLIC_URL + '/images/attractions/small/attraction16.jpg'} />
           </span>
           <span className="tiles">
-            <ImageTile src={Attraction10} />
-            <ImageTile src={Attraction11} />
-            <ImageTile src={Attraction14} />
+            <ImageTile src={process.env.PUBLIC_URL + '/images/attractions/small/attraction10.jpg'} />
+            <ImageTile src={process.env.PUBLIC_URL + '/images/attractions/small/attraction11.jpg'} />
+            <ImageTile src={process.env.PUBLIC_URL + '/images/attractions/small/attraction14.jpg'} />
           </span>
           <span className="tiles">
 
-            <ImageTile src={Attraction15} />
-            <ImageTile src={Attraction2} />
-            <ImageTile src={Attraction3} />
+            <ImageTile src={process.env.PUBLIC_URL + '/images/attractions/small/attraction15.jpg'} />
+            <ImageTile src={process.env.PUBLIC_URL + '/images/attractions/small/attraction2.jpg'} />
+            <ImageTile src={process.env.PUBLIC_URL + '/images/attractions/small/attraction3.jpg'} />
           </span>
           <span className="tiles">
-            <ImageTile src={Attraction5} />
-            <ImageTile src={Attraction6} />
-            <ImageTile src={Attraction8} />
+            <ImageTile src={process.env.PUBLIC_URL + '/images/attractions/small/attraction5.jpg'} />
+            <ImageTile src={process.env.PUBLIC_URL + '/images/attractions/small/attraction6.jpg'} />
+            <ImageTile src={process.env.PUBLIC_URL + '/images/attractions/small/attraction8.jpg'} />
           </span>
 
 

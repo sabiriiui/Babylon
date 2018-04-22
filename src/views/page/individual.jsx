@@ -1,15 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import PakageTile from "../tile/pakageTile";
-import Individual from '../../images/individual.jpg';
 import { DataStore } from '../../stores/DataStore';
 import { getLocale } from '../../Utils/commonUtilities.react';
 
 import { Gmaps, Marker, InfoWindow, Circle } from 'react-gmaps';
 
-import Attraction1 from '../../images/attractions/attraction10.jpg';
-import Attraction2 from '../../images/attractions/attraction13.jpg';
-import Attraction3 from '../../images/attractions/attraction14.jpg';
 
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -62,18 +58,13 @@ export default class IndividualPage extends React.Component {
     let languageLocale = getLocale(DataStore.getLocale());
     return {
       title: languageLocale["INDIVIDUAL_TITLE"],
-      stayTime: languageLocale["INDIVIDUAL_STAY_TIME"],
+      stayTime: languageLocale["INDIVIDUAL_STAY"],
       categoryText: languageLocale["INIDVIDUAL_CAEGORY_TEXT"],
       descriptionText1: languageLocale["INIDIVIDUAL_DESCRIPTION_TEXT_1"],
       descriptionText2: languageLocale["INIDIVIDUAL_DESCRIPTION_TEXT_2"],
       descriptionText3: languageLocale["INIDIVIDUAL_DESCRIPTION_TEXT_3"],
       descriptionText4: languageLocale["INIDIVIDUAL_DESCRIPTION_TEXT_4"],
-      day1departure1: languageLocale["INDIVIDUAL_DAY_1_DEP_1"],
-      day1departure2: languageLocale["INDIVIDUAL_DAY_1_DEP_2"],
-      day1departurep1:languageLocale["INDIVIDUAL_DAY_1_DEP_P1"],
-      day1departurep2:languageLocale["INDIVIDUAL_DAY_1_DEP_P2"],
-      day1departurep3:languageLocale["INDIVIDUAL_DAY_1_DEP_P3"],
-      day1departurep4:languageLocale["INDIVIDUAL_DAY_1_DEP_P4"],
+      day1departure: languageLocale["INDIVIDUAL_DAY_1_DEP_1"],
       day2departure:  languageLocale["INDIVIDUAL_DAY_2_DEP_1"],
       day3departure:  languageLocale["INDIVIDUAL_DAY_3_DEP_1"],
       day4departure:  languageLocale["INDIVIDUAL_DAY_4_DEP_1"],
@@ -137,16 +128,16 @@ export default class IndividualPage extends React.Component {
             <Carousel showThumbs={true} showArrows={true}
             >
               <div>
-                <img src={require('../../images/main.jpg')} />
+                <img src={process.env.PUBLIC_URL + '/images/main.jpg'} />
               </div>
               <div>
-                <img src={Attraction1} />
+                <img src={process.env.PUBLIC_URL + '/images/attractions/attraction10.jpg'} />
               </div>
               <div>
-                <img src={Attraction2} />
+                <img src={process.env.PUBLIC_URL + '/images/attractions/attraction13.jpg'} />
               </div>
               <div>
-                <img src={Attraction3} />
+                <img src={process.env.PUBLIC_URL + '/images/attractions/attraction14.jpg'} />
               </div>
             </Carousel>
           </div>
@@ -220,14 +211,7 @@ export default class IndividualPage extends React.Component {
               <p><span class="icon-left">1</span></p>
               <div class="item_content">
                 <h2><strong>{languageLocale["DAY"]} 1: {languageLocale["DEPARTURE"]}</strong></h2>
-                <p>{pakageInfo.day1departure1}.<br />
-                  {pakageInfo.day1departure2}</p>
-                <ul>
-                  <li>{pakageInfo.day1departurep1}</li>
-                  <li>{pakageInfo.day1departurep2}</li>
-                  <li>{pakageInfo.day1departurep3}</li>
-                  <li>{pakageInfo.day1departurep4}</li>
-                </ul>
+                <p>{pakageInfo.day1departure1}.</p>
               </div>
             </div>
               <div class="interary-item">
